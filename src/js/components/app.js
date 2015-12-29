@@ -17,9 +17,17 @@ class App extends React.Component {
 
     return(
       <main>
-        <section id='test' className='mainArea'>
+        <section className='mainArea'>
           <div>
-
+            <section className="charOne">
+              <section className='spriteImageOne'></section>
+            </section>
+            <section className="charTwo">
+              <section className='spriteImageTwo'></section>
+            </section>
+            <section className="charThree">
+              <section className='spriteImageThree'></section>
+            </section>
           </div>
         </section>
         <section id='sideArea' className='sideArea'>

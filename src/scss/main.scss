@@ -1,6 +1,12 @@
 @import '../../dist/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
 @import '../../dist/bower_components/neat/app/assets/stylesheets/_neat.scss';
 
+@mixin spriteProperties {
+  margin: 4.5em 0 0 1.5em;
+  width: 180px;
+  height: 192px;
+  animation: play 0.7s steps(3) infinite;
+}
 * {
     font-family: 'PT Sans Caption', sans-serif;
   }
@@ -30,17 +36,37 @@ main {
     height:56em;
     box-shadow: 0px 0px 5px 4px #3C3A3A;
   }
+
+  //This is used to run the frames for the sprites
+  .spriteImageOne {
+    background: url('../../assets/sprites/NickOneBig.png') left center;
+    @include spriteProperties;
+  }
+
+  .spriteImageTwo {
+    background: url('../../assets/sprites/NickTwoBig.png') left center;
+    @include spriteProperties;
+  }
+
+  .spriteImageThree {
+    background: url('../../assets/sprites/NickThreeBig.png') left center;
+    @include spriteProperties;
+  }
+
+  @keyframes play {
+    100% { background-position: -576px; }
+  }
 }
 
 
 .sideArea {
-  @include span-columns(3.3);
+  @include span-columns(4);
   background-color: #0E1A66;
   opacity:0.95;
   border-radius: 2%;
   height:18.7em;
   position:absolute;
-  right:1em;
+  right:0em;
   top:1.8em;
   box-shadow: 0px 0px 5px 13px #3C3A3A inset;
 
@@ -59,7 +85,7 @@ main {
 
     li {
       margin-left:0.7em;
-      width:90%;
+      width:80%;
       padding:0.1em;
       border: 0.1em #0E1A66 solid;
       margin-top:0.2em
