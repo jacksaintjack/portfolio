@@ -8,14 +8,9 @@ class App extends React.Component {
     let audio = $('#soundEffect')
     let audioReady = audio[0]
 
-    $(function() {
-      $('#menuSound li').mouseenter(function() {
+      $('#menuSound li').click(function() {
           audioReady.play();
       });
-      $('#menuSound li').mouseleave(function() {
-          audioReady.pause();
-      });
-    });
   }
 
   render () {
