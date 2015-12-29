@@ -1,7 +1,11 @@
 @import '../../dist/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
 @import '../../dist/bower_components/neat/app/assets/stylesheets/_neat.scss';
 
- main {
+* {
+    font-family: 'PT Sans Caption', sans-serif;
+  }
+
+main {
   background-image: url('http://i.ytimg.com/vi/qDxpIvovlOs/maxresdefault.jpg');
   z-index:-1;
   background-repeat: no-repeat;
@@ -17,18 +21,54 @@
   background-color: #0E1A66;
   opacity:0.95;
   border-radius: 1%;
+  box-shadow: 0px 0px 5px 13px #3C3A3A inset;
+
+  div {
+    @include span-columns(12);
+    border-radius: 1%;
+    border: 0.6em white solid;
+    height:56em;
+    box-shadow: 0px 0px 5px 4px #3C3A3A;
+  }
 }
 
-.contentArea {
-  @include span-columns(12);
-  border-radius: 1%;
-  border: 0.6em white solid;
-  height:56em;
-  box-shadow: 0px 0px 5px 4px #6B6969;
-
-}
 
 .sideArea {
-  @include span-columns(2);
+  @include span-columns(3.3);
   background-color: #0E1A66;
+  opacity:0.95;
+  border-radius: 2%;
+  height:18.7em;
+  position:absolute;
+  right:1em;
+  top:1.8em;
+  box-shadow: 0px 0px 5px 13px #3C3A3A inset;
+
+  ul{
+    width:100%;
+    margin:0;
+    padding-left:0;
+    text-decoration: none;
+    list-style-type: none;
+    color:white;
+    font-size:1.5em;
+    border-radius: 2%;
+    border: 0.4em white solid;
+    height:12.5em;
+    box-shadow: 0px 0px 5px 4px #3C3A3A;
+
+    li {
+      margin-left:0.7em;
+      width:90%;
+      padding:0.1em;
+      border: 0.1em #0E1A66 solid;
+      margin-top:0.2em
+    }
+
+
+    li:hover{
+      border: 0.1em white solid;
+      background-color: rgba(128, 128, 128, 0.48);
+    }
+  }
 }

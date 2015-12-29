@@ -1,17 +1,35 @@
 import React, { PropTypes } from 'react'
+import $ from 'jquery'
+
 
 class App extends React.Component {
+
+  componentDidMount(){
+    let audio = $('#soundEffect')
+    let audioReady = audio[0]
+
+    $(function() {
+      $('#menuSound li').mouseenter(function() {
+          audioReady.play();
+      });
+      $('#menuSound li').mouseleave(function() {
+          audioReady.pause();
+      });
+    });
+  }
+
   render () {
+
     return(
       <main>
-        <section className='mainArea'>
-          <div className='contentArea'>
-            
+        <section id='test' className='mainArea'>
+          <div>
+
           </div>
         </section>
-        <section className='sideArea'>
+        <section id='sideArea' className='sideArea'>
           <nav>
-            <ul>
+            <ul id="menuSound">
               <li>The Journey</li>
               <li>Skills</li>
               <li>Job/Adventure History</li>
@@ -19,8 +37,12 @@ class App extends React.Component {
               <li>Resume</li>
               <li>GitHub Profile</li>
             </ul>
+            <audio id="soundEffect" src="../../assets/Sounds/CursorMove.mp3"/>
           </nav>
         </section>
+        <footer className="">
+          <div></div>
+        </footer>
       </main>
     )
   }
