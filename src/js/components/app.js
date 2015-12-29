@@ -18,19 +18,87 @@ class App extends React.Component {
     return(
       <main>
         <section className='mainArea'>
-          <div>
+          <div className ="contentArea">
+
             <section className="charOne">
+
               <section className='spriteImageOne'></section>
+              <section className="charStatsOne">
+                <h2>JavaScript Assassin</h2>
+                <span>Level: 6</span>
+                <span>Stamina: 78/89 </span>
+                <div className="staminaBar">
+                  <div className="curStamina"></div>
+                </div>
+                <span>Will: 85/92 </span>
+                <div className="willBar">
+                  <div className="curWill"></div>
+                </div>
+              </section>
+
+              <section className="charStatsTwo">
+                <span>To Next Level</span>
+                <span>68/200 xp</span>
+                <div className="experienceBar">
+                  <div className ="curExp"></div>
+                </div>
+              </section>
             </section>
+
             <section className="charTwo">
+
               <section className='spriteImageTwo'></section>
-            </section>
+              <section className="charStatsOne">
+                <h2>Sorcerer Of React</h2>
+                <span>Level: 4</span>
+                <span>Stamina: 68/72 </span>
+                <div className="staminaBar">
+                  <div className="curStamina"></div>
+                </div>
+                <span>Will: 70/82 </span>
+                <div className="willBar">
+                  <div className="curWill"></div>
+                </div>
+              </section>
+
+              <section className="charStatsTwo">
+                <span>To Next Level</span>
+                <span>123/150 xp</span>
+                <div className="experienceBar">
+                  <div className='curExp'></div>
+                </div>
+              </section>
+
+          </section>
+
             <section className="charThree">
               <section className='spriteImageThree'></section>
+              <section className="charStatsOne">
+                <h2>Baron of HTML/CSS</h2>
+                <span>Level: 8</span>
+                <span>Stamina: 95/110 </span>
+                <div className="staminaBar">
+                  <div className="curStamina"></div>
+                </div>
+                <span>Will: 110/118 </span>
+                <div className="willBar">
+                  <div className="curWill"></div>
+                </div>
+              </section>
+
+              <section className="charStatsTwo">
+                <span>To Next Level</span>
+                <span>203/345 xp</span>
+                <div className="experienceBar">
+                  <div className ="curExp"></div>
+                </div>
+              </section>
             </section>
+
           </div>
         </section>
-        <section id='sideArea' className='sideArea'>
+
+        <section className='menuArea'>
           <nav>
             <ul id="menuSound">
               <li>The Journey</li>
@@ -43,9 +111,11 @@ class App extends React.Component {
             <audio id="soundEffect" src="../../assets/Sounds/CursorMove.mp3"/>
           </nav>
         </section>
+
         <footer className="">
           <div></div>
         </footer>
+
       </main>
     )
   }

@@ -6,9 +6,66 @@
   width: 180px;
   height: 192px;
   animation: play 0.7s steps(3) infinite;
+  float:left;
 }
+
+@mixin charSetup {
+  .charStatsOne {
+    @include span-columns(5);
+    padding: 2.5em 0 0 3em;
+
+    span{
+      font-size:1.3em;
+      @include span-columns(12);
+    }
+    span:nth-child(2){
+      @include span-columns(12);
+      font-size:1.5em;
+      color:#759DEC;
+      float:left;
+      padding-bottom: 0.5em;
+    }
+    .staminaBar{
+      @include span-columns(6);
+      height:1em;
+      background-color:black;
+      float:left;
+      margin:0.2em 0 0.2em 0;
+
+    }
+    .willBar {
+      @include span-columns(6);
+      height:1em;
+      background-color:black;
+      float:left;
+      margin-top:0.2em;
+    }
+  }
+
+  .charStatsTwo{
+    @include span-columns(4);
+    padding-top: 7.1em;
+
+    span:nth-child(1){
+      color:#759DEC;
+      padding-bottom:0.5em;
+    }
+    span{
+      font-size:1.3em;
+      @include span-columns(12);
+    }
+    .experienceBar {
+      @include span-columns(6);
+      background-color:black;
+      height:1em;
+      float:left;
+    }
+  }
+}
+
 * {
     font-family: 'PT Sans Caption', sans-serif;
+    text-shadow: 2px 3px #000000;
   }
 
 main {
@@ -29,7 +86,7 @@ main {
   border-radius: 1%;
   box-shadow: 0px 0px 5px 13px #3C3A3A inset;
 
-  div {
+  .contentArea {
     @include span-columns(12);
     border-radius: 1%;
     border: 0.6em white solid;
@@ -58,8 +115,79 @@ main {
   }
 }
 
+//Styling for the character basic stats on main menu
 
-.sideArea {
+.charOne{
+  @include span-columns(10);
+  color:white;
+  @include charSetup;
+
+  .curStamina{
+    width:87%;
+    height:100%;
+    background-color:green;
+  }
+  .curWill{
+    width:93%;
+    height:100%;
+    background-color:green;
+  }
+  .curExp{
+      background-color:green;
+      width:34%;
+      height:100%;
+  }
+}
+
+.charTwo{
+  @include span-columns(10);
+  color:white;
+  @include charSetup;
+
+  .curStamina{
+    width:95%;
+    height:100%;
+    background-color:green;
+  }
+  .curWill{
+    width:85%;
+    height:100%;
+    background-color:green;
+  }
+  .curExp{
+      background-color:green;
+      width:82%;
+      height:100%;
+  }
+}
+
+.charThree{
+  @include span-columns(10);
+  color:white;
+  @include charSetup;
+
+  .curStamina{
+    width:86%;
+    height:100%;
+    background-color:green;
+  }
+  .curWill{
+    width:93%;
+    height:100%;
+    background-color:green;
+  }
+  .curExp{
+      background-color:green;
+      width:59%;
+      height:100%;
+  }
+}
+
+
+
+
+//Navigation menu area
+.menuArea {
   @include span-columns(4);
   background-color: #0E1A66;
   opacity:0.95;
