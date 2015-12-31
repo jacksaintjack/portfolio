@@ -94,6 +94,15 @@ main {
     border: 0.6em white solid;
     box-shadow: 0px 0px 5px 4px #3C3A3A;
 
+    //The toggling of the display in the Job/Adventure History
+    .display{
+      display:block;
+    }
+    .nonDisplay{
+      display:none;
+    }
+
+
     // Styling for the paragraphs in the Journey Page
     h1{
       color:white;
@@ -211,49 +220,7 @@ main {
   border-radius: 2%;
   height:18.7em;
   position:absolute;
-  right:0em;
-  top:1.8em;
-  box-shadow: 0px 0px 5px 13px #3C3A3A inset;
-
-  ul{
-    width:100%;
-    height:100%;
-    margin:0;
-    padding-left:0;
-    list-style-type: none;
-    color:white;
-    font-size:1.5em;
-    border-radius: 2%;
-    border: 0.4em white solid;
-    box-shadow: 0px 0px 5px 4px #3C3A3A;
-    padding:0.5em 0 0 0.5em;;
-
-    a{
-      line-height: 1.6em;
-      color:white;
-      text-decoration: none;
-      width:80%;
-
-      li{
-        border: 0.1em rgba(148, 148, 148, 0) solid;
-      }
-    }
-
-    li:hover{
-      border: 0.1em white solid;
-      background-color: rgba(128, 128, 128, 0.48);
-    }
-  }
-}
-//Used to fix an css issue for the other pages besides home
-.menuAreaOther{
-  @include span-columns(4);
-  background-color: #0E1A66;
-  opacity:0.95;
-  border-radius: 2%;
-  height:18.7em;
-  position:absolute;
-  right:2.45em;
+  right:2%;
   top:1.8em;
   box-shadow: 0px 0px 5px 13px #3C3A3A inset;
 
@@ -289,11 +256,10 @@ main {
 }
 
 // This is for the footer on the main page.
-
-footer{
+.profileInfo{
   position: absolute;
   @include span-columns(4);
-  right: 2.55em;
+  right: 2%;
   top: 40em;
   border-radius: 2%;
   border: 0.6em white solid;
