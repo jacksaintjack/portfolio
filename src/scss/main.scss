@@ -73,10 +73,11 @@ main {
   z-index:-1;
   background-repeat: no-repeat;
   background-size: cover;
-  height:58em;
+  height:60em;
   margin:0;
 }
 
+//Main area where the characters and stats live. Used to elements for a shadow effect
 .mainArea {
   @include span-columns(10);
   margin: 0.8em;
@@ -87,11 +88,29 @@ main {
   box-shadow: 0px 0px 5px 13px #3C3A3A inset;
 
   .contentArea {
-    @include span-columns(12);
+    width:100%;
+    height:100%;
     border-radius: 1%;
     border: 0.6em white solid;
-    height:56em;
     box-shadow: 0px 0px 5px 4px #3C3A3A;
+
+    // Styling for the paragraphs in the Journey Page
+    h1{
+      color:white;
+      margin-left: 1.4em;
+    }
+    #journeyArea{
+
+      p{
+        color:white;
+        font-size:1.5em;
+        margin:1em 3em 0 2em;
+      }
+
+      p:nth-child(1){
+        margin-right:13em;
+      }
+    }
   }
 
   //This is used to run the frames for the sprites
@@ -184,9 +203,7 @@ main {
 }
 
 
-
-
-//Navigation menu area
+//Navigation menu area used two elments for a shadow effect
 .menuArea {
   @include span-columns(4);
   background-color: #0E1A66;
@@ -200,29 +217,115 @@ main {
 
   ul{
     width:100%;
+    height:100%;
     margin:0;
     padding-left:0;
-    text-decoration: none;
     list-style-type: none;
     color:white;
     font-size:1.5em;
     border-radius: 2%;
     border: 0.4em white solid;
-    height:12.5em;
     box-shadow: 0px 0px 5px 4px #3C3A3A;
+    padding:0.5em 0 0 0.5em;;
 
-    li {
-      margin-left:0.7em;
+    a{
+      line-height: 1.6em;
+      color:white;
+      text-decoration: none;
       width:80%;
-      padding:0.1em;
-      border: 0.1em #0E1A66 solid;
-      margin-top:0.2em
-    }
 
+      li{
+        border: 0.1em rgba(148, 148, 148, 0) solid;
+      }
+    }
 
     li:hover{
       border: 0.1em white solid;
       background-color: rgba(128, 128, 128, 0.48);
+    }
+  }
+}
+//Used to fix an css issue for the other pages besides home
+.menuAreaOther{
+  @include span-columns(4);
+  background-color: #0E1A66;
+  opacity:0.95;
+  border-radius: 2%;
+  height:18.7em;
+  position:absolute;
+  right:2.45em;
+  top:1.8em;
+  box-shadow: 0px 0px 5px 13px #3C3A3A inset;
+
+  ul{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding-left:0;
+    list-style-type: none;
+    color:white;
+    font-size:1.5em;
+    border-radius: 2%;
+    border: 0.4em white solid;
+    box-shadow: 0px 0px 5px 4px #3C3A3A;
+    padding:0.5em 0 0 0.5em;;
+
+    a{
+      line-height: 1.6em;
+      color:white;
+      text-decoration: none;
+      width:80%;
+
+      li{
+        border: 0.1em rgba(148, 148, 148, 0) solid;
+      }
+    }
+
+    li:hover{
+      border: 0.1em white solid;
+      background-color: rgba(128, 128, 128, 0.48);
+    }
+  }
+}
+
+// This is for the footer on the main page.
+
+footer{
+  position: absolute;
+  @include span-columns(4);
+  right: 2.55em;
+  top: 40em;
+  border-radius: 2%;
+  border: 0.6em white solid;
+  height:14em;
+  box-shadow: 0px 0px 5px 3px #3C3A3A;
+
+  .creator{
+    width:100%;
+    height:100%;
+    background-color: #0E1A66;
+    float:right;
+    opacity:0.95;
+    box-shadow: 0px 0px 5px 3px #3C3A3A inset;
+    color:white;
+    h2{
+      margin:0;
+      padding: 1em 0 0 0.5em;
+    }
+    h3{
+      margin:0;
+      padding-left: 0.6em;
+    }
+    img{
+      border-radius: 20%;
+      height: 7em;
+      width: 10em;
+      position: absolute;
+      right: 1.4em;
+      top: 1.7em;
+    }
+    .location{
+      padding-top: 2.5em;
     }
   }
 }
