@@ -32,16 +32,19 @@ class JobHistory extends React.Component {
                 <div className="spriteTwo"></div>
                 <div className='spriteThree'></div>
                 <div className='spriteFour'></div>
+
                 <div className="mainLine">
                   <div className="ticklineOne"></div>
                   <div className="ticklineTwo"></div>
                   <div className='ticklineThree'></div>
                   <div className='ticklineFour'></div>
                 </div>
-                <p className="unv">University</p>
-                <p className='ta'>Teacher Assistant</p>
-                <p className="coc">City Of Cookeville</p>
+
+                <p className="ta">Teacher <br /> Assistant</p>
+                <p className='unv'>Graduated<br /> University</p>
+                <p className="coc">City Of <br /> Cookeville</p>
                 <p className='iy'>Iron Yard</p>
+
               </section>
             </section>
           </div>

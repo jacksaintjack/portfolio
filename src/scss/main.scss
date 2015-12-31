@@ -9,6 +9,13 @@
   float:left;
 }
 
+@mixin spritePropertiesTwo {
+  width: 100px;
+  height: 95px;
+  animation: play 0.7s steps(3) infinite;
+  float:left;
+}
+
 @mixin charSetup {
   .charStatsOne {
     @include span-columns(5);
@@ -156,10 +163,37 @@ main {
       .timelineArea{
         width:100%;
         height:100%;
-        padding-top:13%;
+        padding-top:4%;
         border-radius: 1%;
         border: 0.6em white solid;
         box-shadow: 0px 0px 5px 4px #3C3A3A;
+
+        .spriteOne{
+          background: url('../../assets/sprites/NickCollege.png') left center;
+          @include spritePropertiesTwo;
+          @include shift(0.5);
+          }
+
+        .spriteTwo{
+          background: url('../../assets/sprites/NickGraduation.png') left center;
+          @include spritePropertiesTwo;
+          @include shift(1.8);
+
+        }
+        .spriteThree{
+          background: url('../../assets/sprites/NickCookeville.png') left center;
+          @include spritePropertiesTwo;
+          @include shift(1.9);
+        }
+        .spriteFour{
+          background: url('../../assets/sprites/NickIronYard.png') left center;
+          @include spritePropertiesTwo;
+          @include shift(1.8);
+        }
+
+        @keyframes play {
+          100% { background-position: -288px;}
+        }
 
         .mainLine{
           @include span-columns(12);
@@ -187,24 +221,24 @@ main {
           @include ticklines;
         }
 
-        .unv{
-          @include tickText;
-          @include shift(0.3);
-        }
-
         .ta{
           @include tickText;
-          @include shift(1.4);
+          @include shift(0.5);
+        }
+
+        .unv{
+          @include tickText;
+          @include shift(1.7);
         }
 
         .coc{
           @include tickText;
-          @include shift(0.8);
+          @include shift(1.9);
         }
 
         .iy{
           @include tickText;
-          @include shift(1.1)
+          @include shift(1.55)
         }
       }
     }
