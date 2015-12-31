@@ -21,9 +21,7 @@ class Skills extends React.Component {
       <main>
         <section className='mainArea'>
           <div className ="contentArea">
-            <section className="timelineContent display"></section>
-            <section className='timelineContent display nonDisplay'></section>
-            <section className='timelineContent display nonDisplay'></section>
+    
           </div>
         </section>
 
