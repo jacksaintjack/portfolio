@@ -135,8 +135,8 @@ main {
 // Styling for the content in Job/Adventure page
     .timelineText{
       @include span-columns(8);
-      margin:1% 0 2% 7%;
-      height:60%;
+      margin:1% 0 4% 7%;
+      height:50%;
       background-color: #0E1A66;
       opacity:0.95;
       border-radius: 1%;
@@ -148,6 +148,28 @@ main {
         border-radius: 1%;
         border: 0.6em white solid;
         box-shadow: 0px 0px 5px 4px #3C3A3A;
+        padding:3% 3% 0% 3%;
+
+        h2{
+          color:white;
+        }
+
+        h2:nth-child(1){
+          margin-bottom:0%;
+        }
+        h2:nth-child(2){
+          margin-top:0%;
+        }
+        h2:nth-child(3){
+          margin-top:0%;
+        }
+        .degreeTitle{
+          margin-bottom:0;
+        }
+        p{
+          color:white;
+          font-size:1.3em;
+        }
       }
     }
   //Time Line Section
@@ -224,21 +246,25 @@ main {
         .ta{
           @include tickText;
           @include shift(0.5);
+          text-align: center;
         }
 
         .unv{
           @include tickText;
           @include shift(1.7);
+          text-align: center;
         }
 
         .coc{
           @include tickText;
           @include shift(1.9);
+          text-align: center;
         }
 
         .iy{
           @include tickText;
           @include shift(1.55)
+          text-align: center;
         }
       }
     }

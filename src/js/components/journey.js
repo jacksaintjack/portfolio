@@ -20,11 +20,11 @@ class Journey extends React.Component {
     //This section is used for the text to display one letter at a time like a typewriter
     let str =
             `<p>
-                  Nicholas Glover a lover of video games, computers, maps, and now Front-End Engineering.
-                  Is now continuing his journey into the realm of the unknown. Never accepting what has been told to him to be the absolute truth in the pursuit of knowledge!
-                  You may ask, “Why is this?” When Mr. Glover was younger he was diagnosed with having Severe Dyslexia.
-                  It was said that it could have caused him not to be able to get the education that everyone was getting,
-                  but that statement would be far from the truth. Through hard work, and great teachers Mr. Glover was able to obtain the education he needed.
+                Nicholas Glover a lover of video games, computers, maps, and now Front-End Engineering.
+                Is now continuing his journey into the realm of the unknown. Never accepting what has been told to him to be the absolute truth in the pursuit of knowledge!
+                You may ask, “Why is this?” When Mr. Glover was younger he was diagnosed with having Severe Dyslexia.
+                It was said that it could have caused him not to be able to get the education that everyone was getting,
+                but that statement would be far from the truth. Through hard work, and great teachers Mr. Glover was able to obtain the education he needed.
             </p>
 
             <p>
