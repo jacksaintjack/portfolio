@@ -8,6 +8,7 @@ class JobHistory extends React.Component {
     super(props)
 
     this.state = {
+      isAuthorized: true,
       isAuthorizedOne: false,
       isAuthorizedTwo: false,
       isAuthorizedThree: false,
@@ -22,6 +23,7 @@ class JobHistory extends React.Component {
   toggleTimeLineOne(event){
     event.preventDefault()
     this.setState({
+      isAuthorized: false,
       isAuthorizedOne: true,
       isAuthorizedTwo: false,
       isAuthorizedThree: false,
@@ -32,6 +34,7 @@ class JobHistory extends React.Component {
   toggleTimeLineTwo(event){
     event.preventDefault()
       this.setState({
+        isAuthorized: false,
         isAuthorizedOne: false,
         isAuthorizedTwo: true,
         isAuthorizedThree: false,
@@ -42,6 +45,7 @@ class JobHistory extends React.Component {
   toggleTimeLineThree(event){
     event.preventDefault()
       this.setState({
+        isAuthorized: false,
         isAuthorizedOne: false,
         isAuthorizedTwo: false,
         isAuthorizedThree: true,
@@ -52,6 +56,7 @@ class JobHistory extends React.Component {
   toggleTimeLineFour(event){
     event.preventDefault()
       this.setState({
+        isAuthorized: false,
         isAuthorizedOne: false,
         isAuthorizedTwo: false,
         isAuthorizedThree: false,
@@ -77,8 +82,12 @@ class JobHistory extends React.Component {
           <div className ="contentArea">
             <section className="timelineText">
               <div>
-                <ToggleDisplay show={this.state.isAuthorizedOne}>
+                <ToggleDisplay show={this.state.isAuthorized}>
+                  <h1>Click On The Characters Below for Job/Adventure History </h1>
+                  <section className="arrowDown"></section>
+                </ToggleDisplay>
 
+                <ToggleDisplay show={this.state.isAuthorizedOne}>
                   <h2>Graduated Tennessee Technological University</h2>
                   <h2 className="degreeTitle">Degree: Geosciences</h2>
                   <h2>Concentration: Geographic Information Systems (GIS)</h2>

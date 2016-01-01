@@ -72,7 +72,7 @@
 
 @mixin ticklines {
   height:2.5em;
-  background-color:black;
+  background-color:#0F022B;
   width:0.4em;
   float:left;
 }
@@ -150,6 +150,10 @@ main {
         box-shadow: 0px 0px 5px 4px #3C3A3A;
         padding:3% 3% 0% 3%;
 
+        h1{
+          margin:18% 5% 0em 5%;
+          text-align:center;
+        }
         h2{
           color:white;
         }
@@ -171,6 +175,17 @@ main {
           font-size:1.3em;
         }
       }
+// For the Arrow thats point at my jobs to click on
+  .arrowDown {
+  	width: 0;
+  	height: 0;
+    margin:0 0 0 40%;
+  	border-left: 4em solid transparent;
+  	border-right: 4em solid transparent;
+  	border-top: 4em solid #CEBA3A;
+    opacity:1;
+  }
+
     }
   //Time Line Section
     .timeline{
@@ -220,7 +235,7 @@ main {
         .mainLine{
           @include span-columns(12);
           height:1em;
-          background-color:black;
+          background-color:#0F022B;
         }
 
         .ticklineOne{
