@@ -20,9 +20,38 @@ class Skills extends React.Component {
     return(
       <main>
         <section className='mainArea'>
-          <div className ="contentArea">
-    
-          </div>
+          <section className ="contentArea">
+
+            <section className="charPic">
+              <div></div>
+            </section>
+
+            <section className="charEquippedSkills">
+              <div>
+                <h2>Equip Skills</h2>
+              </div>
+            </section>
+
+            <section className="charStats">
+              <div>
+                <h2>Stats</h2>
+              </div>
+            </section>
+
+            <section className="charMisc">
+              <div className='charOtherSkills'>
+                <h2>Skills Unequipped</h2>
+              </div>
+            </section>
+
+
+            <section className="charEquip">
+              <div>
+                <h2>Items Equipped</h2>
+              </div>
+            </section>
+
+          </section>
         </section>
 
         <nav className='menuArea'>

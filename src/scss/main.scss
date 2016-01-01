@@ -84,6 +84,18 @@
   margin-top:3%;
 }
 
+@mixin innerDesignBox{
+  background-color: #0E1A66;
+  opacity:0.95;
+  border-radius: 1%;
+  box-shadow: 0px 0px 5px 13px #3C3A3A inset;
+}
+
+@mixin outerDesignBox{
+  border-radius: 1%;
+  border: 0.6em white solid;
+  box-shadow: 0px 0px 5px 4px #3C3A3A;
+}
 * {
     font-family: 'PT Sans Caption', sans-serif;
     text-shadow: 2px 3px #000000;
@@ -103,17 +115,12 @@ main {
   @include span-columns(10);
   margin: 0.8em;
   height:56em;
-  background-color: #0E1A66;
-  opacity:0.95;
-  border-radius: 1%;
-  box-shadow: 0px 0px 5px 13px #3C3A3A inset;
+  @include innerDesignBox;
 
   .contentArea {
     width:100%;
     height:100%;
-    border-radius: 1%;
-    border: 0.6em white solid;
-    box-shadow: 0px 0px 5px 4px #3C3A3A;
+    @include outerDesignBox;
 
     // Styling for the paragraphs in the Journey Page
     h1{
@@ -137,21 +144,16 @@ main {
       @include span-columns(8);
       margin:1% 0 4% 7%;
       height:50%;
-      background-color: #0E1A66;
-      opacity:0.95;
-      border-radius: 1%;
-      box-shadow: 0px 0px 5px 13px #3C3A3A inset;
+      @include innerDesignBox;
 
       div{
         width:100%;
         height:100%;
-        border-radius: 1%;
-        border: 0.6em white solid;
-        box-shadow: 0px 0px 5px 4px #3C3A3A;
         padding:3% 3% 0% 3%;
+        @include outerDesignBox;
 
         h1{
-          margin:18% 5% 0em 5%;
+          margin:15% 5% 0em 5%;
           text-align:center;
         }
         h2{
@@ -177,6 +179,8 @@ main {
       }
 // For the Arrow thats point at my jobs to click on
   .arrowDown {
+    position:relative;
+    top:2em;
   	width: 0;
   	height: 0;
     margin:0 0 0 40%;
@@ -192,18 +196,13 @@ main {
       @include span-columns(8.7);
       @include shift(0.5);
       height:18em;
-      background-color: #0E1A66;
-      opacity:0.95;
-      border-radius: 1%;
-      box-shadow: 0px 0px 5px 13px #3C3A3A inset;
+      @include innerDesignBox;
 
       .timelineArea{
         width:100%;
         height:100%;
         padding-top:4%;
-        border-radius: 1%;
-        border: 0.6em white solid;
-        box-shadow: 0px 0px 5px 4px #3C3A3A;
+        @include outerDesignBox;
 
         .spriteOne{
           background: url('../../assets/sprites/NickCollege.png') left center;
@@ -272,13 +271,13 @@ main {
 
         .coc{
           @include tickText;
-          @include shift(1.9);
+          @include shift(1.7);
           text-align: center;
         }
 
         .iy{
           @include tickText;
-          @include shift(1.55)
+          @include shift(1.8)
           text-align: center;
         }
       }
@@ -374,6 +373,78 @@ main {
   }
 }
 
+//This section is for the Skills page
+.charPic{
+  @include span-columns(3);
+  @include innerDesignBox;
+  margin:2% 0 0 2%;
+  height:15em;
+
+  div{
+    @include outerDesignBox;
+    width:100%;
+    height:100%;
+  }
+}
+
+.charEquippedSkills{
+  @include span-columns(6);
+  @include innerDesignBox;
+  margin:2% 0 0 2%;
+  height:15em;
+
+  div{
+    @include outerDesignBox;
+    width:100%;
+    height:100%;
+    color:white;
+  }
+}
+
+.charStats{
+  @include span-columns(3);
+  @include innerDesignBox;
+  margin:2% 0 0 2%;
+  height:31.7em;
+
+
+  div{
+    @include outerDesignBox;
+    width:100%;
+    height:100%;
+    color:white;
+  }
+}
+
+.charMisc{
+  @include span-columns(6);
+  @include innerDesignBox
+  margin:2% 0 0 2%;
+  height:15em;
+
+  div{
+    @include outerDesignBox
+    width:100%;
+    height:100%;
+    color:white;
+  }
+}
+
+.charEquip{
+  position:relative;
+  @include span-columns(6);
+  @include innerDesignBox;
+  margin:2% 0 0 2%;
+  height:15em;
+
+  div{
+    @include outerDesignBox;
+    width:100%;
+    height:100%;
+    color:white;
+  }
+
+}
 
 //Navigation menu area used two elments for a shadow effect
 .menuArea {
