@@ -5,7 +5,7 @@
   margin: 4.5em 0 0 1.5em;
   width: 180px;
   height: 192px;
-  animation: play 0.7s steps(3) infinite;
+  animation: spriteHome 0.7s steps(3) infinite;
   float:left;
 }
 
@@ -13,7 +13,7 @@
 @mixin spritePropertiesTwo {
   width: 100px;
   height: 95px;
-  animation: play 0.7s steps(3) infinite;
+  animation: spriteTimeLine 0.7s steps(3) infinite;
   float:left;
 }
 
@@ -154,9 +154,9 @@
 }
 //Starts of all the Styles
 * {
-    font-family: 'PT Sans Caption', sans-serif;
-    text-shadow: 2px 3px #000000;
-  }
+  font-family: 'PT Sans Caption', sans-serif;
+  text-shadow: 2px 3px #000000;
+}
 
 main {
   background-image: url('http://i.ytimg.com/vi/qDxpIvovlOs/maxresdefault.jpg');
@@ -179,6 +179,100 @@ main {
     //To quick find mixin search with ** in front of A7 and ** behind with no spaces
     @include outerDesignBox;
 
+    //Home page Style
+    //This is used to run the frames for the sprites
+    .spriteImageOne {
+      background: url('../../assets/sprites/NickOneBig.png') left center;
+      //To quick find mixin search with ** in front of A1 and ** behind with no spaces
+      @include spriteProperties;
+    }
+
+    .spriteImageTwo {
+      background: url('../../assets/sprites/NickTwoBig.png') left center;
+      //To quick find mixin search with ** in front of A1 and ** behind with no spaces
+      @include spriteProperties;
+    }
+
+    .spriteImageThree {
+      background: url('../../assets/sprites/NickThreeBig.png') left center;
+      //To quick find mixin search with ** in front of A1 and ** behind with no spaces
+      @include spriteProperties;
+    }
+
+    @keyframes spriteHome {
+      100% { background-position: -576px; }
+    }
+    //Styling for the character basic stats on home
+
+    .charOne{
+      @include span-columns(10);
+      color:white;
+      //To quick find mixin search with ** in front of A3 and ** behind with no spaces
+      @include charSetup;
+
+      .curStamina{
+        width:87%;
+        height:100%;
+        background-color:green;
+      }
+      .curWill{
+        width:93%;
+        height:100%;
+        background-color:green;
+      }
+      .curExp{
+        background-color:green;
+        width:34%;
+        height:100%;
+      }
+    }
+
+    .charTwo{
+      @include span-columns(10);
+      color:white;
+      //To quick find mixin search with ** in front of A3 and ** behind with no spaces
+      @include charSetup;
+
+      .curStamina{
+        width:95%;
+        height:100%;
+        background-color:green;
+      }
+      .curWill{
+        width:85%;
+        height:100%;
+        background-color:green;
+      }
+      .curExp{
+        background-color:green;
+        width:82%;
+        height:100%;
+      }
+    }
+
+    .charThree{
+      @include span-columns(10);
+      color:white;
+      //To quick find mixin search with ** in front of A3 and ** behind with no spaces
+      @include charSetup;
+
+      .curStamina{
+        width:86%;
+        height:100%;
+        background-color:green;
+      }
+      .curWill{
+        width:93%;
+        height:100%;
+        background-color:green;
+      }
+      .curExp{
+        background-color:green;
+        width:59%;
+        height:100%;
+      }
+    }
+
     // Styling for the paragraphs in the Journey Page
     h1{
       color:white;
@@ -196,7 +290,7 @@ main {
         margin-right:13em;
       }
     }
-// Styling for the content in Job/Adventure page
+    // Styling for the content in Job/Adventure page
     .timelineText{
       @include span-columns(8);
       margin:1% 0 4% 7%;
@@ -234,21 +328,21 @@ main {
           font-size:1.3em;
         }
       }
-// For the Arrow thats point at my jobs to click on
-  .arrowDown {
-    position:relative;
-    top:2em;
-  	width: 0;
-  	height: 0;
-    margin:0 0 0 40%;
-  	border-left: 4em solid transparent;
-  	border-right: 4em solid transparent;
-  	border-top: 4em solid #CEBA3A;
-    opacity:1;
-  }
+      // For the Arrow thats point at my jobs to click on
+      .arrowDown {
+        position:relative;
+        top:2em;
+        width: 0;
+        height: 0;
+        margin:0 0 0 40%;
+        border-left: 4em solid transparent;
+        border-right: 4em solid transparent;
+        border-top: 4em solid #CEBA3A;
+        opacity:1;
+      }
 
     }
-  //Time Line Section
+    //Time Line Section
     .timeline{
       @include span-columns(8.7);
       @include shift(0.5);
@@ -277,23 +371,21 @@ main {
             background: url('../../assets/sprites/NickCollege.png') left center;
             //To quick find mixin search with ** in front of A2 and ** behind with no spaces
             @include spritePropertiesTwo;
-            margin-left: 28%;
-            }
-            @keyframes play {
-              100% { background-position: -288px;}
-            }
-            .ticklineOne{
-              //To quick find mixin search with ** in front of A4 and ** behind with no spaces
-              @include ticklines;
-              margin: 7% 0 0 46%;
-            }
-            .ta{
-              //To quick find mixin search with ** in front of A5 and ** behind with no spaces
-              @include tickText;
-              @include span-columns(12);
-              text-align:center;
+            @include shift(3.15);
             }
           }
+          .ticklineOne{
+            //To quick find mixin search with ** in front of A4 and ** behind with no spaces
+            @include ticklines;
+            margin: 7% 0 0 46%;
+          }
+          .ta{
+            //To quick find mixin search with ** in front of A5 and ** behind with no spaces
+            @include tickText;
+            @include span-columns(12);
+            text-align:center;
+          }
+        }
 
         .secondStop{
           @include span-columns(3);
@@ -303,23 +395,20 @@ main {
             background: url('../../assets/sprites/NickGraduation.png') left center;
             //To quick find mixin search with ** in front of A2 and ** behind with no spaces
             @include spritePropertiesTwo;
-            margin-left: 28%;
-            }
-            @keyframes play {
-              100% { background-position: -288px;}
-            }
-            .ticklineTwo{
-              //To quick find mixin search with ** in front of A4 and ** behind with no spaces
-              @include ticklines;
-              margin: 7% 0 0 46%;
-            }
-            .unv{
-              //To quick find mixin search with ** in front of A5 and ** behind with no spaces
-              @include tickText;
-              @include span-columns(12);
-              text-align:center;
-            }
+            @include shift(3.15);
           }
+          .ticklineTwo{
+            //To quick find mixin search with ** in front of A4 and ** behind with no spaces
+            @include ticklines;
+            margin: 7% 0 0 46%;
+          }
+          .unv{
+            //To quick find mixin search with ** in front of A5 and ** behind with no spaces
+            @include tickText;
+            @include span-columns(12);
+            text-align:center;
+          }
+        }
 
         .thirdstop{
           @include span-columns(3);
@@ -329,22 +418,19 @@ main {
             background: url('../../assets/sprites/NickCookeville.png') left center;
             //To quick find mixin search with ** in front of A2 and ** behind with no spaces
             @include spritePropertiesTwo;
-            margin-left: 28%;
-            }
-            @keyframes play {
-              100% { background-position: -288px;}
-            }
-            .ticklineThree{
-              //To quick find mixin search with ** in front of A4 and ** behind with no spaces
-              @include ticklines;
-              margin: 7% 0 0 46%;
-            }
-            .coc{
-              //To quick find mixin search with ** in front of A5 and ** behind with no spaces
-              @include tickText;
-              @include span-columns(12);
-              text-align:center;
-            }
+            @include shift(3.15);
+          }
+          .ticklineThree{
+            //To quick find mixin search with ** in front of A4 and ** behind with no spaces
+            @include ticklines;
+            margin: 7% 0 0 46%;
+          }
+          .coc{
+            //To quick find mixin search with ** in front of A5 and ** behind with no spaces
+            @include tickText;
+            @include span-columns(12);
+            text-align:center;
+          }
         }
 
         .fourthStop{
@@ -355,10 +441,7 @@ main {
             background: url('../../assets/sprites/NickIronYard.png') left center;
             //To quick find mixin search with ** in front of A2 and ** behind with no spaces
             @include spritePropertiesTwo;
-            margin-left: 28%;
-            }
-          @keyframes play {
-            100% { background-position: -288px;}
+            @include shift(3.15);
           }
           .ticklineFourth{
             //To quick find mixin search with ** in front of A4 and ** behind with no spaces
@@ -372,212 +455,120 @@ main {
             text-align:center;
           }
         }
+        @keyframes spriteTimeLine {
+          100% { background-position: -288px;}
       }
     }
   }
 
-  //This is used to run the frames for the sprites
-  .spriteImageOne {
-    background: url('../../assets/sprites/NickOneBig.png') left center;
-    //To quick find mixin search with ** in front of A1 and ** behind with no spaces
-    @include spriteProperties;
+
+  //This section is for the Skills page
+  .charPic{
+    @include span-columns(3);
+    //To quick find mixin search with ** in front of A6 and ** behind with no spaces
+    @include innerDesignBox;
+    margin:2% 0 0 2%;
+    height:15em;
+
+    div{
+      //To quick find mixin search with ** in front of A7 and ** behind with no spaces
+      @include outerDesignBox;
+
+      img{
+        width:40%;
+        height:50;
+        margin:14% 0 0 29%;
+
+      }
+    }
   }
 
-  .spriteImageTwo {
-    background: url('../../assets/sprites/NickTwoBig.png') left center;
-    //To quick find mixin search with ** in front of A1 and ** behind with no spaces
-    @include spriteProperties;
+  .charEquippedSkills{
+    @include span-columns(6);
+    //To quick find mixin search with ** in front of A6 and ** behind with no spaces
+    @include innerDesignBox;
+    margin:2% 0 0 2%;
+    height:15em;
+
+    div{
+      //To quick find mixin search with ** in front of A7 and ** behind with no spaces
+      @include outerDesignBox;
+      color:white;
+      padding-left:2%;
+
+      //To quick find mixin search with ** in front of A8 and ** behind with no spaces
+      @include skillStyle;
+    }
   }
 
-  .spriteImageThree {
-    background: url('../../assets/sprites/NickThreeBig.png') left center;
-    //To quick find mixin search with ** in front of A1 and ** behind with no spaces
-    @include spriteProperties;
-  }
+  .charStats{
+    @include span-columns(3);
+    //To quick find mixin search with ** in front of A6 and ** behind with no spaces
+    @include innerDesignBox;
+    margin:2% 0 0 2%;
+    height:31.7em;
 
-  @keyframes play {
-    100% { background-position: -576px; }
-  }
-}
-
-//Styling for the character basic stats on main menu
-
-.charOne{
-  @include span-columns(10);
-  color:white;
-  //To quick find mixin search with ** in front of A3 and ** behind with no spaces
-  @include charSetup;
-
-  .curStamina{
-    width:87%;
-    height:100%;
-    background-color:green;
-  }
-  .curWill{
-    width:93%;
-    height:100%;
-    background-color:green;
-  }
-  .curExp{
-      background-color:green;
-      width:34%;
+    div{
+      //To quick find mixin search with ** in front of A7 and ** behind with no spaces
+      @include outerDesignBox;
+      width:100%;
       height:100%;
-  }
-}
+      color:white;
+      padding-left:5%;
 
-.charTwo{
-  @include span-columns(10);
-  color:white;
-  //To quick find mixin search with ** in front of A3 and ** behind with no spaces
-  @include charSetup;
-
-  .curStamina{
-    width:95%;
-    height:100%;
-    background-color:green;
-  }
-  .curWill{
-    width:85%;
-    height:100%;
-    background-color:green;
-  }
-  .curExp{
-      background-color:green;
-      width:82%;
-      height:100%;
-  }
-}
-
-.charThree{
-  @include span-columns(10);
-  color:white;
-  //To quick find mixin search with ** in front of A3 and ** behind with no spaces
-  @include charSetup;
-
-  .curStamina{
-    width:86%;
-    height:100%;
-    background-color:green;
-  }
-  .curWill{
-    width:93%;
-    height:100%;
-    background-color:green;
-  }
-  .curExp{
-      background-color:green;
-      width:59%;
-      height:100%;
-  }
-}
-
-//This section is for the Skills page
-.charPic{
-  @include span-columns(3);
-  //To quick find mixin search with ** in front of A6 and ** behind with no spaces
-  @include innerDesignBox;
-  margin:2% 0 0 2%;
-  height:15em;
-
-  div{
-    //To quick find mixin search with ** in front of A7 and ** behind with no spaces
-    @include outerDesignBox;
-
-    img{
-      width:40%;
-      height:50;
-      margin:14% 0 0 29%;
-
-    }
-  }
-}
-
-.charEquippedSkills{
-  @include span-columns(6);
-  //To quick find mixin search with ** in front of A6 and ** behind with no spaces
-  @include innerDesignBox;
-  margin:2% 0 0 2%;
-  height:15em;
-
-  div{
-    //To quick find mixin search with ** in front of A7 and ** behind with no spaces
-    @include outerDesignBox;
-    color:white;
-    padding-left:2%;
-
-    //To quick find mixin search with ** in front of A8 and ** behind with no spaces
-    @include skillStyle;
-  }
-}
-
-.charStats{
-  @include span-columns(3);
-  //To quick find mixin search with ** in front of A6 and ** behind with no spaces
-  @include innerDesignBox;
-  margin:2% 0 0 2%;
-  height:31.7em;
-
-  div{
-    //To quick find mixin search with ** in front of A7 and ** behind with no spaces
-    @include outerDesignBox;
-    width:100%;
-    height:100%;
-    color:white;
-    padding-left:5%;
-
-    p{
-      font-size:1.5em;
-      margin:3% 0 3% 0;
-    }
-  }
-}
-
-.charMisc{
-  @include span-columns(6);
-  //To quick find mixin search with ** in front of A6 and ** behind with no spaces
-  @include innerDesignBox
-  margin:2% 0 0 2%;
-  height:15em;
-
-  div{
-    //To quick find mixin search with ** in front of A7 and ** behind with no spaces
-    @include outerDesignBox
-    color:white;
-    padding-left:2%;
-
-    //To quick find mixin search with ** in front of A8 and ** behind with no spaces
-    @include skillStyle
-  }
-}
-
-.charEquip{
-  position:relative;
-  @include span-columns(6);
-  //To quick find mixin search with ** in front of A6 and ** behind with no spaces
-  @include innerDesignBox;
-  margin:2% 0 0 2%;
-  height:15em;
-
-  div{
-    //To quick find mixin search with ** in front of A7 and ** behind with no spaces
-    @include outerDesignBox;
-    color:white;
-    padding-left:2%;
-
-    //To quick find mixin search with ** in front of A8 and ** behind with no spaces
-    @include skillStyle;
-
-    ul{
-      padding-left:7%;
-    }
-
-    span{
-      left:4%;
+      p{
+        font-size:1.5em;
+        margin:3% 0 3% 0;
+      }
     }
   }
 
-}
-//Styling for Projects/Quests Completed Section
+  .charMisc{
+    @include span-columns(6);
+    //To quick find mixin search with ** in front of A6 and ** behind with no spaces
+    @include innerDesignBox
+    margin:2% 0 0 2%;
+    height:15em;
+
+    div{
+      //To quick find mixin search with ** in front of A7 and ** behind with no spaces
+      @include outerDesignBox
+      color:white;
+      padding-left:2%;
+
+      //To quick find mixin search with ** in front of A8 and ** behind with no spaces
+      @include skillStyle
+    }
+  }
+
+  .charEquip{
+    position:relative;
+    @include span-columns(6);
+    //To quick find mixin search with ** in front of A6 and ** behind with no spaces
+    @include innerDesignBox;
+    margin:2% 0 0 2%;
+    height:15em;
+
+    div{
+      //To quick find mixin search with ** in front of A7 and ** behind with no spaces
+      @include outerDesignBox;
+      color:white;
+      padding-left:2%;
+
+      //To quick find mixin search with ** in front of A8 and ** behind with no spaces
+      @include skillStyle;
+
+      ul{
+        padding-left:7%;
+      }
+
+      span{
+        left:4%;
+      }
+    }
+
+  }
+  //Styling for Projects/Quests Completed Section
   .firstProject{
     //To quick find mixin search with ** in front of A9 and ** behind with no spaces
     @include projectsStyle;
@@ -594,7 +585,7 @@ main {
   .fourthProject{
     @include projectsStyle;
   }
-
+}
 //Navigation menu area used two elments for a shadow effect
 .menuArea {
   @include span-columns(4);
@@ -641,7 +632,7 @@ main {
 // This is for the footer on the main page.
 .profileInfo {
   position: absolute;
-  @include span-columns(4);
+  @include span-columns(5);
   right: 2%;
   top: 40em;
   border-radius: 2%;

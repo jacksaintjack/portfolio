@@ -163,7 +163,7 @@ class JobHistory extends React.Component {
                 </section>
 
                 <section id="spriteArea" className='thirdstop'>
-                  <div className="spriteThird" onClick={this.toggleTimeLineTwo}></div>
+                  <div className="spriteThird" onClick={this.toggleTimeLineThree}></div>
                   <div className='ticklineThree'></div>
                   <p className="coc">City Of <br /> Cookeville</p>
                 </section>

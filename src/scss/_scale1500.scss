@@ -1,69 +1,163 @@
-@media (min-width:1000px) and (max-width:1510px){
-  //On the home Page
-  .charOne{
-    @include span-columns(7);
-  }
+@media (min-width:1px) and (max-width:1510px){
 
-  .charTwo{
-    @include span-columns(7);
+  //Styling for home page
+  main{
+    section {
+      .mainArea{
+        .contentArea{
+          .spriteImageOne {
+            background: url('../../assets/sprites/NickOneMedium.png') left center;
+            margin: 7.5em 0 0 1.5em ;
+            width: 130px;
+            height: 129px;
+            animation: spriteTimeLineMedium 0.7s steps(3) infinite;
+            float:left;
+          }
 
-  }
+          .spriteImageTwo{
+            background: url('../../assets/sprites/NickTwoMedium.png') left center;
+            margin: 7.5em 0 0 1.5em;
+            width: 130px;
+            height: 129px;
+            animation: spriteTimeLineMedium 0.7s steps(3) infinite;
+            float:left;
+          }
 
-  .charThree{
-    @include span-columns(7);
-  }
-  //For skills page
+          .spriteImageThree{
+            background: url('../../assets/sprites/NickThreeMedium.png') left center;
+            margin: 7.5em 0 0 1.5em;
+            width: 130px;
+            height: 128px;
+            animation: spriteTimeLineMedium 0.7s steps(3) infinite;
+            float:left;
+          }
 
-  .charEquippedSkills{
+          @keyframes spriteTimeLineMedium {
+            100% { background-position: -384px;}
+          }
 
-    div{
-      ul{
-        font-size:1em;
+          .charOne{
+            @include span-columns(8);
+          }
+
+          .charTwo{
+            @include span-columns(8);
+
+          }
+
+          .charThree{
+            @include span-columns(8);
+          }
+        }
       }
     }
   }
 
-  .charStats{
 
-    div{
-      p{
-        font-size:1.3em;
-        margin:3% 0 3% 0;
+    main{
+      .mainArea{
+        .contentArea {
+          .charOne{
+            @include span-columns(7);
+          }
+
+          .charTwo{
+            @include span-columns(7);
+
+          }
+
+          .charThree{
+            @include span-columns(7);
+          }
+
+          //JOb section
+          .timeline{
+            .timelineArea{
+              .firstStop {
+                .spriteFirst {
+                  margin-left:25%;  
+                }
+              }
+              .secondStop {
+                .spriteSecond {
+                  margin-left:25%;
+                }
+              }
+              .thirdStop {
+                .spriteThird {
+                  margin-left:25%;
+                }
+              }
+              .fourthStop {
+                .spriteFourth {
+                  margin-left:25%;
+                }
+              }
+            }
+          }
+
+          //For skills page
+
+          .charPic{
+            div{
+              img{
+                margin-top:20%;
+              }
+            }
+          }
+          .charEquippedSkills{
+
+            div{
+              ul{
+                font-size:1em;
+              }
+            }
+          }
+
+          .charStats{
+
+            div{
+              p{
+                font-size:1.3em;
+                margin:3% 0 3% 0;
+              }
+            }
+          }
+
+          .charMisc{
+
+            div{
+              ul{
+                font-size:1em;
+              }
+            }
+          }
+
+          .charEquip{
+
+            div{
+              ul{
+                font-size:1em;
+              }
+              img{
+                height:1em;
+                width:1em;
+              }
+            }
+          }
+        }
       }
     }
   }
 
-  .charMisc{
-
-    div{
-      ul{
-        font-size:1em;
-      }
-    }
-  }
-
-.charEquip{
-
-  div{
-    ul{
-      font-size:1em;
-    }
-  }
-}
-
-  //Menu Area Design
-  .menuArea{
-    @include span-columns(4);
-
-  }
+//Menu Area Design
+main{
   .profileInfo{
-    @include span-columns(4.3);
     .creator{
-      font-size:1.2em;
-      img{
-        margin-top:3%;
-        height: 8em;
-        width: 11em;
+      section{
+        img{
+          margin-top:3%;
+        }
       }
     }
   }
