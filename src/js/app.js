@@ -6,6 +6,7 @@ import App from './components/app';
 import Journey from './components/journey';
 import Skills from './components/skills';
 import JobHistory from './components/jobHistory';
+import Projects from './components/projects';
 
 ReactDOM.render((
   <Router>
@@ -13,5 +14,6 @@ ReactDOM.render((
     <Route path='journey' component={Journey}></Route>
     <Route path='skills' component={Skills}></Route>
     <Route path='jobs' component={JobHistory}></Route>
+    <Route path='projects' component={Projects}></Route>
   </Router>
 ), document.getElementById('app'));

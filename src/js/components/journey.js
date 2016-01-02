@@ -59,7 +59,7 @@ class Journey extends React.Component {
         if( char === '>' ) isTag = false;
 
         if (isTag) return type();
-        setTimeout(type, 40);
+        setTimeout(type, 1);
     }());
   }
 
@@ -79,9 +79,10 @@ class Journey extends React.Component {
             <Link to='/'><li>Home</li></Link>
             <Link to='skills'><li>Skills</li></Link>
             <Link to='jobs'><li>Job/Adventure History</li></Link>
-            <Link to='projects>'><li>Projects/Quests Completed</li></Link>
+            <Link to='projects'><li>Projects/Quests Completed</li></Link>
             <a href='../../assets/pdf/Resume-NicholasGlover.pdf'><li>Resume</li></a>
             <a href="https://github.com/jacksaintjack"><li>GitHub Profile</li></a>
+            <a href="https://www.linkedin.com/in/nicholasdwglover"><li>Linkin Profile</li></a>
           </ul>
           <audio id="soundEffect" src="../../assets/Sounds/CursorMove.mp3"/>
         </nav>

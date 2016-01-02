@@ -19,7 +19,7 @@ class JobHistory extends React.Component {
     this.toggleTimeLineThree = this.toggleTimeLineThree.bind(this),
     this.toggleTimeLineFour = this.toggleTimeLineFour.bind(this)
   }
-
+  //Below is used to hide and display the job text
   toggleTimeLineOne(event){
     event.preventDefault()
     this.setState({
@@ -74,6 +74,14 @@ class JobHistory extends React.Component {
     }), function(){
         auioReady.pause();
     }
+
+    $('#spriteArea div').click(function() {
+        audioReady.play();
+    }), function(){
+        auioReady.pause();
+    }
+
+
   }
   render () {
     return(
@@ -140,23 +148,31 @@ class JobHistory extends React.Component {
 
             <section className="timeline">
               <section className='timelineArea'>
-                <div className="spriteOne" onClick={this.toggleTimeLineOne}></div>
-                <div className="spriteTwo" onClick={this.toggleTimeLineTwo}></div>
-                <div className='spriteThree' onClick={this.toggleTimeLineThree}></div>
-                <div className='spriteFour' onClick={this.toggleTimeLineFour}></div>
+                <div className="mainLine"></div>
 
-                <div className="mainLine">
+                <section id="spriteArea" className='firstStop'>
+                  <div className="spriteFirst" onClick={this.toggleTimeLineOne}></div>
                   <div className="ticklineOne"></div>
+                  <p className="ta">Teacher <br /> Assistant</p>
+                </section>
+
+                <section id="spriteArea" className='secondStop'>
+                  <div className="spriteSecond" onClick={this.toggleTimeLineTwo}></div>
                   <div className="ticklineTwo"></div>
+                  <p className='unv'>Graduated<br /> University</p>
+                </section>
+
+                <section id="spriteArea" className='thirdstop'>
+                  <div className="spriteThird" onClick={this.toggleTimeLineTwo}></div>
                   <div className='ticklineThree'></div>
-                  <div className='ticklineFour'></div>
-                </div>
+                  <p className="coc">City Of <br /> Cookeville</p>
+                </section>
 
-                <p className="ta">Teacher <br /> Assistant</p>
-                <p className='unv'>Graduated<br /> University</p>
-                <p className="coc">City Of <br /> Cookeville</p>
-                <p className='iy'>Iron Yard</p>
-
+                <section id="spriteArea" className='fourthStop'>
+                  <div className='spriteFourth' onClick={this.toggleTimeLineFour}></div>
+                  <div className='ticklineFourth'></div>
+                  <p className='iy'>Iron Yard</p>
+                </section>
               </section>
             </section>
           </div>
@@ -167,9 +183,10 @@ class JobHistory extends React.Component {
             <Link to='/'><li>Home</li></Link>
             <Link to='journey'><li>The Journey</li></Link>
             <Link to='skills'><li>Skills</li></Link>
-            <Link to='projects>'><li>Projects/Quests Completed</li></Link>
+            <Link to='projects'><li>Projects/Quests Completed</li></Link>
             <a href='../../assets/pdf/Resume-NicholasGlover.pdf'><li>Resume</li></a>
             <a href="https://github.com/jacksaintjack"><li>GitHub Profile</li></a>
+            <a href="https://www.linkedin.com/in/nicholasdwglover"><li>Linkin Profile</li></a>
           </ul>
           <audio id="soundEffect" src="../../assets/Sounds/CursorMove.mp3"/>
         </nav>

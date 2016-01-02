@@ -1,0 +1,70 @@
+@media (min-width:1000px) and (max-width:1510px){
+  //On the home Page
+  .charOne{
+    @include span-columns(7);
+  }
+
+  .charTwo{
+    @include span-columns(7);
+
+  }
+
+  .charThree{
+    @include span-columns(7);
+  }
+  //For skills page
+
+  .charEquippedSkills{
+
+    div{
+      ul{
+        font-size:1em;
+      }
+    }
+  }
+
+  .charStats{
+
+    div{
+      p{
+        font-size:1.3em;
+        margin:3% 0 3% 0;
+      }
+    }
+  }
+
+  .charMisc{
+
+    div{
+      ul{
+        font-size:1em;
+      }
+    }
+  }
+
+.charEquip{
+
+  div{
+    ul{
+      font-size:1em;
+    }
+  }
+}
+
+  //Menu Area Design
+  .menuArea{
+    @include span-columns(4);
+
+  }
+  .profileInfo{
+    @include span-columns(4.3);
+    .creator{
+      font-size:1.2em;
+      img{
+        margin-top:3%;
+        height: 8em;
+        width: 11em;
+      }
+    }
+  }
+}

@@ -106,9 +106,10 @@ class App extends React.Component {
               <Link to='journey'><li>The Journey</li></Link>
               <Link to='skills'><li>Skills</li></Link>
               <Link to='jobs'><li>Job/Adventure History</li></Link>
-              <Link to='projects>'><li>Projects/Quests Completed</li></Link>
+              <Link to='projects'><li>Projects/Quests Completed</li></Link>
               <a href='../../assets/pdf/Resume-NicholasGlover.pdf'><li>Resume</li></a>
               <a href="https://github.com/jacksaintjack"><li>GitHub Profile</li></a>
+              <a href="https://www.linkedin.com/in/nicholasdwglover"><li>Linkin Profile</li></a>
             </ul>
             <audio id="soundEffect" src="../../assets/Sounds/CursorMove.mp3"/>
           </nav>
@@ -116,12 +117,14 @@ class App extends React.Component {
 
           <footer className="profileInfo">
             <section className="creator">
-              <h2>Front-End Engineer</h2>
-              <h3>Nicholas Glover</h3>
-              <h3>Email: nickglovdev@gmail.com</h3>
-              <h3>Carrier Pigeon: Duku Tower</h3>
+              <section>
+                <h2>Front-End Engineer</h2>
+                <h3>Nicholas Glover</h3>
+                <h3>Email: nickglovdev@gmail.com</h3>
+                <h3>Carrier Pigeon: Duku Tower</h3>
+                <h3 className='location'>Location: The Electric Castle</h3>
+              </section>
               <img src="../../assets/pictures/Profile Pic.jpg"/>
-              <h3 className='location'>Location: The Electric Castle</h3>
             </section>
           </footer>
       </main>
