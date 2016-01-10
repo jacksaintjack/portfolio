@@ -1,4 +1,4 @@
-@media (min-width:1px) and (max-width:1510px){
+@media (min-width:1px) and (max-width:1500px){
 
   //Styling for home page
   main{
@@ -54,109 +54,94 @@
   }
 
 
-    main{
-      .mainArea{
-        .contentArea {
-          .charOne{
-            @include span-columns(7);
-          }
+  main{
+    .mainArea{
+      .contentArea {
+        .charOne{
+          @include span-columns(7);
+        }
 
-          .charTwo{
-            @include span-columns(7);
+        .charTwo{
+          @include span-columns(7);
 
-          }
+        }
 
-          .charThree{
-            @include span-columns(7);
-          }
+        .charThree{
+          @include span-columns(7);
+        }
 
-          //JOb section
-          .timeline{
-            .timelineArea{
-              .firstStop {
-                .spriteFirst {
-                  margin-left:25%;  
-                }
-              }
-              .secondStop {
-                .spriteSecond {
-                  margin-left:25%;
-                }
-              }
-              .thirdStop {
-                .spriteThird {
-                  margin-left:25%;
-                }
-              }
-              .fourthStop {
-                .spriteFourth {
-                  margin-left:25%;
-                }
+        //JOb section
+        .timeline{
+          .timelineArea{
+            .firstStop {
+              .spriteFirst {
+                margin-left:25%;
               }
             }
-          }
-
-          //For skills page
-
-          .charPic{
-            div{
-              img{
-                margin-top:20%;
+            .secondStop {
+              .spriteSecond {
+                margin-left:25%;
               }
             }
-          }
-          .charEquippedSkills{
-
-            div{
-              ul{
-                font-size:1em;
+            .thirdStop {
+              .spriteThird {
+                margin-left:25%;
               }
             }
-          }
-
-          .charStats{
-
-            div{
-              p{
-                font-size:1.3em;
-                margin:3% 0 3% 0;
-              }
-            }
-          }
-
-          .charMisc{
-
-            div{
-              ul{
-                font-size:1em;
-              }
-            }
-          }
-
-          .charEquip{
-
-            div{
-              ul{
-                font-size:1em;
-              }
-              img{
-                height:1em;
-                width:1em;
+            .fourthStop {
+              .spriteFourth {
+                margin-left:25%;
               }
             }
           }
         }
-      }
-    }
-  }
 
-//Menu Area Design
-main{
-  .profileInfo{
-    .creator{
-      section{
-        img{
-          margin-top:3%;
+        //For skills page
+
+        .charPic{
+          div{
+            img{
+              margin-top:20%;
+            }
+          }
+        }
+        .charEquippedSkills{
+
+          div{
+            ul{
+              font-size:1em;
+            }
+          }
+        }
+
+        .charStats{
+
+          div{
+            p{
+              font-size:1.3em;
+              margin:3% 0 3% 0;
+            }
+          }
+        }
+
+        .charMisc{
+
+          div{
+            ul{
+              font-size:1em;
+            }
+          }
+        }
+
+        .charEquip{
+
+          div{
+            ul{
+              font-size:1em;
+            }
+            img{
+            }
+          }
         }
       }
     }

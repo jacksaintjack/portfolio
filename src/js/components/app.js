@@ -19,7 +19,7 @@ class App extends React.Component {
   render () {
     return(
       <main>
-        <section>
+        <section className="mainSection">
           <section className='mainArea'>
             <div className ="contentArea">
 
@@ -101,15 +101,15 @@ class App extends React.Component {
             </div>
           </section>
 
-          <nav className='menuArea'>
+          <nav id="movedMenu" className='menuArea'>
             <ul id="menuSound">
-              <Link to='journey'><li>The Journey</li></Link>
-              <Link to='skills'><li>Skills</li></Link>
-              <Link to='jobs'><li>Job/Adventure History</li></Link>
-              <Link to='projects'><li>Projects/Quests Completed</li></Link>
-              <a href='../../assets/pdf/Resume-NicholasGlover.pdf'><li>Resume</li></a>
-              <a href="https://github.com/jacksaintjack"><li>GitHub Profile</li></a>
-              <a href="https://www.linkedin.com/in/nicholasdwglover"><li>Linkin Profile</li></a>
+              <Link to='journey'><li><div className='listImage'></div>The Journey</li></Link>
+              <Link to='skills'><li><div className='listImage'></div>Skills</li></Link>
+              <Link to='jobs'><li><div className='listImage'></div>Job/Adventure History</li></Link>
+              <Link to='projects'><li><div className='listImage'></div>Projects/Quests Completed</li></Link>
+              <a href='../../assets/pdf/Resume-NicholasGlover.pdf'><li><div className='listImage'></div>Resume</li></a>
+              <a href="https://github.com/jacksaintjack"><li><div className='listImage'></div>GitHub Profile</li></a>
+              <a href="https://www.linkedin.com/in/nicholasdwglover"><li><div className='listImage'></div>Linkin Profile</li></a>
             </ul>
             <audio id="soundEffect" src="../../assets/Sounds/CursorMove.mp3"/>
           </nav>

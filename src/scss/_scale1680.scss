@@ -154,7 +154,7 @@
 }
 //Starts of all the Styles
 * {
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-shadow: 2px 3px #000000;
 }
 
@@ -410,7 +410,7 @@ main {
           }
         }
 
-        .thirdstop{
+        .thirdStop{
           @include span-columns(3);
           height:10em;
 
@@ -603,19 +603,30 @@ main {
     height:100%;
     margin:0;
     padding-left:0;
-    list-style-type: none;
     color:white;
     font-size:1.5em;
     border-radius: 2%;
     border: 0.4em white solid;
     box-shadow: 0px 0px 5px 4px #3C3A3A;
-    padding:0.5em 0 0 0.5em;;
+    padding:0.5em 0 0 0.5em;
+    list-style-type: none;
+
 
     a{
       line-height: 1.6em;
       color:white;
       text-decoration: none;
       width:80%;
+
+      div{
+        width:1.3em;
+        height:1.3em;
+        background-image: url('../../assets/sprites/Rupee.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        float:left;
+        margin-top: 0.5%;
+      }
 
       li{
         border: 0.1em rgba(148, 148, 148, 0) solid;

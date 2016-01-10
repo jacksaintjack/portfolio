@@ -162,7 +162,7 @@ class JobHistory extends React.Component {
                   <p className='unv'>Graduated<br /> University</p>
                 </section>
 
-                <section id="spriteArea" className='thirdstop'>
+                <section id="spriteArea" className='thirdStop'>
                   <div className="spriteThird" onClick={this.toggleTimeLineThree}></div>
                   <div className='ticklineThree'></div>
                   <p className="coc">City Of <br /> Cookeville</p>
@@ -180,13 +180,13 @@ class JobHistory extends React.Component {
 
         <nav className='menuArea'>
           <ul id="menuSound">
-            <Link to='/'><li>Home</li></Link>
-            <Link to='journey'><li>The Journey</li></Link>
-            <Link to='skills'><li>Skills</li></Link>
-            <Link to='projects'><li>Projects/Quests Completed</li></Link>
-            <a href='../../assets/pdf/Resume-NicholasGlover.pdf'><li>Resume</li></a>
-            <a href="https://github.com/jacksaintjack"><li>GitHub Profile</li></a>
-            <a href="https://www.linkedin.com/in/nicholasdwglover"><li>Linkin Profile</li></a>
+            <Link to='/'><li><div className='listImage'></div>Home</li></Link>
+            <Link to='journey'><li><div className='listImage'></div>The Journey</li></Link>
+            <Link to='skills'><li><div className='listImage'></div>Skills</li></Link>
+            <Link to='projects'><li><div className='listImage'></div>Projects/Quests Completed</li></Link>
+            <a href='../../assets/pdf/Resume-NicholasGlover.pdf'><li><div className='listImage'></div>Resume</li></a>
+            <a href="https://github.com/jacksaintjack"><li><div className='listImage'></div>GitHub Profile</li></a>
+            <a href="https://www.linkedin.com/in/nicholasdwglover"><li><div className='listImage'></div>Linkin Profile</li></a>
           </ul>
           <audio id="soundEffect" src="../../assets/Sounds/CursorMove.mp3"/>
         </nav>
