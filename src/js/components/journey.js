@@ -59,8 +59,10 @@ class Journey extends React.Component {
         if( char === '>' ) isTag = false;
 
         if (isTag) return type();
-        setTimeout(type, 1);
+        setTimeout(type, 10);
     }());
+    //On Page load will go to top of the page
+    scroll(0,0)
   }
 
   render () {
@@ -74,15 +76,15 @@ class Journey extends React.Component {
           </div>
         </section>
 
-        <nav className='menuArea'>
+        <nav className='menuArea nonHomeMenu'>
           <ul id="menuSound">
             <Link to='/'><li><div className='listImage'></div>Home</li></Link>
             <Link to='skills'><li><div className='listImage'></div>Skills</li></Link>
             <Link to='jobs'><li><div className='listImage'></div>Job/Adventure History</li></Link>
             <Link to='projects'><li><div className='listImage'></div>Projects/Quests Completed</li></Link>
-            <a href='../../assets/pdf/Resume-NicholasGlover.pdf'><li><div className='listImage'></div>Resume</li></a>
-            <a href="https://github.com/jacksaintjack"><li><div className='listImage'></div>GitHub Profile</li></a>
-            <a href="https://www.linkedin.com/in/nicholasdwglover"><li><div className='listImage'></div>Linkin Profile</li></a>
+            <a target="_blank" href='../../assets/pdf/Resume-NicholasGlover.pdf'><li><div className='listImage'></div>Resume</li></a>
+            <a target="_blank" href="https://github.com/jacksaintjack"><li><div className='listImage'></div>GitHub Profile</li></a>
+            <a target="_blank" href="https://www.linkedin.com/in/nicholasdwglover"><li><div className='listImage'></div>LinkedIn Profile</li></a>
           </ul>
           <audio id="soundEffect" src="../../assets/Sounds/CursorMove.mp3"/>
         </nav>

@@ -35,7 +35,7 @@
 
   //Styling for home page
   main{
-    height:81em;
+    height:83em;
     background-image: url('http://i.ytimg.com/vi/qDxpIvovlOs/maxresdefault.jpg');
     z-index:-1;
     background-repeat: no-repeat;
@@ -95,35 +95,35 @@
           font-size: 1em;
 
           div{
-          h1{
-            margin-top:35%;
-          }
+            h1{
+              margin-top:35%;
+            }
 
-          .arrowDown{
-            margin-left:37%;
-          }
+            .arrowDown{
+              margin-left:37%;
+            }
           }
         }
         .timeline{
           .timelineArea{
             .firstStop {
               .spriteFirst {
-                margin-left:19%;
+                margin-left:12.5%;
               }
             }
             .secondStop {
               .spriteSecond {
-                margin-left:19%;
+                margin-left:12.5%;
               }
             }
             .thirdStop{
               .spriteThird {
-                margin-left:17%;
+                margin-left:12.5%;
               }
             }
             .fourthStop {
               .spriteFourth {
-                margin-left:17%;
+                margin-left:12.5%;
               }
             }
           }
@@ -132,7 +132,7 @@
         // Styling for the paragraphs in the Journey Page
         h1{
           color:white;
-          margin-left: 1.2em;
+          margin-left: 1.4em;
         }
         #journeyArea{
 
@@ -166,14 +166,14 @@
               font-size:1.3em;
               margin:0;
               padding:0;
-            li{
-              padding:0;
-              span{
-                bottom:0.2em;
+              li{
+                padding:0;
+                span{
+                  bottom:0.2em;
+                }
+                img{
+                }
               }
-              img{
-              }
-            }
             }
           }
         }
@@ -205,12 +205,12 @@
               li{
                 padding-bottom:0em;
 
-              span{
-                bottom:0.2em;
+                span{
+                  bottom:0.2em;
+                }
+                img{
+                }
               }
-              img{
-              }
-            }
             }
 
           }
@@ -227,14 +227,14 @@
               padding:0;
 
               li{
-              margin:0;
-              padding:0;
+                margin:0;
+                padding:0;
+              }
+              img{
+                height:1.6em;
+                width: 1.6em;
+              }
             }
-            img{
-              height:1.6em;
-              width: 1.6em;
-            }
-          }
           }
         }
       }
@@ -244,12 +244,12 @@
   //Menu Area Design
   main{
     .menuArea{
-      @include span-columns(5)
-      height:25em;
+      @include span-columns(4.6)
+      height:21em;
       right:2%;
 
       ul{
-        font-size:1.45em;
+        font-size:1.4em;
       }
     }
     .profileInfo{
@@ -274,9 +274,15 @@
           }
         }
         img{
-          margin:4% 0 0 37%;
-          height:4.5em;
-          width:7.5em;
+          margin:4% 0 0 33%;
+          height:6em;
+          width:10em;
+          position:inherit;
+        }
+        @media (max-width:1020px){
+          img{
+            margin:4% 0 0 31%;
+          }
         }
       }
     }

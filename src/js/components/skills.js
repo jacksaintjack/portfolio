@@ -9,17 +9,19 @@ class Skills extends React.Component {
     let audio = $('#soundEffect')
     let audioReady = audio[0]
 
-      $('#menuSound a').mouseenter(function() {
-          audioReady.play();
-      }), function(){
-          auioReady.pause();
-      }
+    $('#menuSound a').mouseenter(function() {
+        audioReady.play();
+    }), function(){
+        auioReady.pause();
+    }
+      //On Page load will go to top of the page
+      scroll(0,0)
   }
 
   render () {
     return(
       <main>
-        <section className='mainArea'>
+        <section className='mainArea skillArea'>
           <section className ="contentArea">
 
             <section className="charPic">
@@ -122,15 +124,15 @@ class Skills extends React.Component {
           </section>
         </section>
 
-        <nav className='menuArea'>
+        <nav className='menuArea nonHomeMenu'>
           <ul id="menuSound">
             <Link to='/'><li><div className='listImage'></div>Home</li></Link>
             <Link to='journey'><li><div className='listImage'></div>The Journey</li></Link>
             <Link to='jobs'><li><div className='listImage'></div>Job/Adventure History</li></Link>
             <Link to='projects'><li><div className='listImage'></div>Projects/Quests Completed</li></Link>
-            <a href='../../assets/pdf/Resume-NicholasGlover.pdf'><li><div className='listImage'></div>Resume</li></a>
-            <a href="https://github.com/jacksaintjack"><li><div className='listImage'></div>GitHub Profile</li></a>
-            <a href="https://www.linkedin.com/in/nicholasdwglover"><li><div className='listImage'></div>Linkin Profile</li></a>
+            <a target="_blank" href='../../assets/pdf/Resume-NicholasGlover.pdf'><li><div className='listImage'></div>Resume</li></a>
+            <a target="_blank" href="https://github.com/jacksaintjack"><li><div className='listImage'></div>GitHub Profile</li></a>
+            <a target="_blank" href="https://www.linkedin.com/in/nicholasdwglover"><li><div className='listImage'></div>LinkedIn Profile</li></a>
           </ul>
           <audio id="soundEffect" src="../../assets/Sounds/CursorMove.mp3"/>
         </nav>

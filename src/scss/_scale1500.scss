@@ -109,7 +109,7 @@
 
           div{
             ul{
-              font-size:1em;
+              font-size:1.2em;
             }
           }
         }
@@ -118,7 +118,7 @@
 
           div{
             p{
-              font-size:1.3em;
+              font-size:1.25em;
               margin:3% 0 3% 0;
             }
           }
@@ -128,7 +128,7 @@
 
           div{
             ul{
-              font-size:1em;
+              font-size:1.2em;
             }
           }
         }
@@ -137,11 +137,45 @@
 
           div{
             ul{
-              font-size:1em;
+              font-size:1.2em;
             }
             img{
             }
           }
+        }
+      }
+    }
+  }
+
+  //Menu Area Design
+  main{
+    .menuArea{
+      @include span-columns(3.5);
+      height:19em;
+      right:2%;
+
+      ul{
+        font-size:1.4em;
+      }
+    }
+    .profileInfo{
+      @include span-columns(5);
+      right:2%;
+      .creator{
+        section{
+          h2{
+            font-size:1.3em;
+          }
+          h3{
+            font-size:1.1em;
+          }
+        }
+        img{
+          height:8.5em;
+          width:11.5em;
+          position:relative;
+          left:1em;
+          bottom:12em;
         }
       }
     }
