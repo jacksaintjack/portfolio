@@ -21,41 +21,59 @@ class Projects extends React.Component {
 
   render () {
     return(
-      <main>
-        <section className='mainArea'>
+      <main className='projectMain'>
+        <section className='mainArea projectArea'>
           <div className ="contentArea">
 
-            <section className='firstProject'>
-              <section>
-                <div></div>
+              <section className='firstProject'>
+                <a target="_blank" href="https://github.com/jacksaintjack/homework_week3_friday">
+                  <section>
+                    <div></div>
+                  </section>
+                </a>
+                <h2>Calculator</h2>
+                <h3>CSS/HTML, Bourbon, Neat, JavaScript, Responsive Design</h3>
               </section>
-              <h2>Name of Project</h2>
-              <h3>Description</h3>
-            </section>
 
-            <section className='secondProject'>
-              <section>
-                <div></div>
+              <section className='secondProject'>
+                <a target="_blank" href="https://github.com/jacksaintjack/silentAuction">
+                  <section>
+                    <div></div>
+                  </section>
+                </a>
+                <h2>Silent Auction</h2>
+                <h3>AJAX, jQuery, Javascript, React, React-Router, HTML/CSS, Bourbon, Neat, Responsive Design</h3>
               </section>
-              <h2>Name of Project</h2>
-              <h3>Description</h3>
-            </section>
 
-            <section className='thirdProject'>
-              <section>
-                <div></div>
+              <section className='thirdProject'>
+                <a target="_blank" href="https://github.com/jacksaintjack/homework_week4_tuesday">
+                  <section>
+                    <div></div>
+                  </section>
+                </a>
+                <h2>Remake of Gitub Repo</h2>
+                <h3>HTML5/CSS, JavaScript,jQuery, AJAX, Templates, Bourbon, Neat</h3>
               </section>
-              <h2>Name of Project</h2>
-              <h3>Description</h3>
-            </section>
 
-            <section className='fourthProject'>
-              <section>
-                <div></div>
+              <section className='fourthProject'>
+                <a target="_blank" href="https://github.com/jacksaintjack/homework_week2_thursday">
+                  <section>
+                    <div></div>
+                  </section>
+                </a>
+                <h2>SK8 Website</h2>
+                <h3>HTML5/CSS, Bourbon, Neat, Responsive Design</h3>
               </section>
-              <h2>Name of Project</h2>
-              <h3>Description</h3>
-            </section>
+
+              <section className='fifthProject'>
+                <a target="_blank" href="https://github.com/jacksaintjack/portfolio">
+                  <section>
+                    <div></div>
+                  </section>
+                </a>
+                <h2>This Site</h2>
+                <h3>React, React-Router, JavaScript, HTML/CSS, Bourbon, Neat, Responsive Design</h3>
+              </section>
 
           </div>
         </section>

@@ -40,13 +40,13 @@
         .timelineText{
           font-size: 0.9em;
           div{
-          h1{
-            margin-top:20%;
-          }
+            h1{
+              margin-top:20%;
+            }
 
-          .arrowDown{
-            margin-left:42.7%;
-          }
+            .arrowDown{
+              margin-left:42.7%;
+            }
           }
         }
         .timeline{
@@ -152,6 +152,26 @@
             }
           }
         }
+        //Styling for Projects/Quests Completed Section
+        .firstProject{
+          height:18em;
+        }
+
+        .secondProject{
+          height:18em;
+        }
+
+        .thirdProject{
+          height:18em;
+        }
+
+
+        .fourthProject{
+          height:18em;
+        }
+        .fifthProject{
+          height:18em;
+        }
       }
     }
   }
@@ -245,10 +265,17 @@
         border-radius: 20%;
         height: 9em;
         width: 12em;
-        left: 20em;
+        left: 21em;
         top: 1.6em;
-
+      }
+      @media (max-width:1550px){
+        img{
+          left:19em;
+        }
       }
     }
+  }
+  .projectArea{
+    height:58em;
   }
 }

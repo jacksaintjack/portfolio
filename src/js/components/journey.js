@@ -67,8 +67,8 @@ class Journey extends React.Component {
 
   render () {
     return(
-      <main>
-        <section className='mainArea'>
+      <main className='journeyArea'>
+        <section className='mainArea journeySection'>
           <div className ="contentArea">
             <h1>The Journey</h1>
             <section id='journeyArea'></section>

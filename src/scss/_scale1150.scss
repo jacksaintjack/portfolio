@@ -30,7 +30,6 @@
         font-size:1em;
       }
     }
-
   }
 
   //Styling for home page
@@ -204,7 +203,6 @@
 
               li{
                 padding-bottom:0em;
-
                 span{
                   bottom:0.2em;
                 }
@@ -235,6 +233,64 @@
                 width: 1.6em;
               }
             }
+          }
+        }
+        //Styling for Projects/Quests Completed Section
+        .firstProject{
+          height:14em;
+
+          h2{
+            font-size:1.3em;
+          }
+          h3{
+            font-size:1.1em;
+          }
+        }
+
+        .secondProject{
+          height:14em;
+          margin-right:30%;
+
+          h2{
+            font-size:1.3em;
+          }
+          h3{
+            font-size:1.1em;
+          }
+        }
+
+        .thirdProject{
+          height:14em;
+          margin-top:18%;
+
+
+          h2{
+            font-size:1.3em;
+          }
+          h3{
+            font-size:1.1em;
+          }
+        }
+
+        .fourthProject{
+          height:14em;
+          margin-top:18%;
+
+          h2{
+            font-size:1.3em;
+          }
+          h3{
+            font-size:1.1em;
+          }
+        }
+        .fifthProject{
+          margin-top:18%;
+          height:14em;
+          h2{
+            font-size:1.3em;
+          }
+          h3{
+            font-size:1.1em;
           }
         }
       }
@@ -286,5 +342,9 @@
         }
       }
     }
+  }
+  //This was done later to have individual main contentArea
+  .projectArea{
+    height:60em;
   }
 }

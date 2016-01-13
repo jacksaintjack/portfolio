@@ -85,8 +85,8 @@ class JobHistory extends React.Component {
   }
   render () {
     return(
-      <main>
-        <section className='mainArea'>
+      <main className='jobMain'>
+        <section className='mainArea jobArea'>
           <div className ="contentArea">
             <section className="timelineText">
               <div>

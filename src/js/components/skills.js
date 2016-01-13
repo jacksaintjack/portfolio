@@ -20,7 +20,7 @@ class Skills extends React.Component {
 
   render () {
     return(
-      <main>
+      <main className='skillMain'>
         <section className='mainArea skillArea'>
           <section className ="contentArea">
 

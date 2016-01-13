@@ -96,6 +96,29 @@
           }
         }
 
+        //Styling for Projects/Quests Completed Section
+          .firstProject{
+            height:16em;
+          }
+
+          .secondProject{
+            height:16em;
+          }
+
+          .thirdProject{
+            height:16em;
+          }
+
+          .fourthProject{
+            height:16em;
+            margin-top:16%;
+          }
+          .fifthProject{
+            margin-top:16%;
+            height:16em;
+          }
+
+
         //For skills page
 
         .charPic{
@@ -180,4 +203,9 @@
       }
     }
   }
+
+  //This was done later to have individual main contentArea
+    .projectArea{
+      height:55em;
+    }
 }

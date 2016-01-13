@@ -20,9 +20,9 @@ class App extends React.Component {
 
   render () {
     return(
-      <main>
+      <main className='homeArea'>
         <section className="mainSection">
-          <section className='mainArea'>
+          <section className='mainArea homeSection'>
             <div className ="contentArea">
 
               <section className="charOne">
