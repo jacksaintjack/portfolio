@@ -1,0 +1,271 @@
+@media only screen and (max-width:1380px){
+
+  //Styling for home page
+  main{
+    section {
+      .mainArea{
+        .contentArea{
+          .spriteImageOne {
+            margin: 5.8em 0 0 0.8em;
+          }
+
+          .spriteImageTwo{
+            margin: 5.8em 0 0 0.8em;
+          }
+
+          .spriteImageThree{
+            margin: 5.8em 0 0 0.8em;
+            ;
+          }
+          .charOne{
+
+            .charStatsOne{
+              @include span-columns(4);
+              margin-top:0;
+              margin-right:0;
+
+              h2{
+                font-size:1.2em;
+              }
+              span:nth-child(2){
+                font-size:1.3em;
+              }
+              span{
+                font-size:1em;
+              }
+            }
+
+            .charStatsTwo{
+              @include span-columns(5);
+              margin-top:1em;
+
+              span:nth-child(1){
+                font-size:1.3em;
+              }
+              span{
+                font-size:1em;
+              }
+            }
+          }
+
+          .charTwo{
+            .charStatsOne{
+              @include span-columns(4);
+              margin-right:0;
+              h2{
+                font-size:1.2em;
+              }
+              span:nth-child(2){
+                font-size:1.3em;
+              }
+              span{
+                font-size:1em;
+              }
+            }
+
+            .charStatsTwo{
+              @include span-columns(5);
+              margin-top:0.2em;
+              padding-top: 7.9em;
+
+              span:nth-child(1){
+                font-size:1.3em;
+              }
+              span{
+                font-size:1em;
+              }
+            }
+          }
+
+          .charThree{
+            .charStatsOne{
+              @include span-columns(4);
+              margin:0;
+              h2{
+                font-size:1.2em;
+              }
+              span:nth-child(2){
+                font-size:1.3em;
+              }
+              span{
+                font-size:1em;
+              }
+            }
+
+            .charStatsTwo{
+              @include span-columns(5);
+              padding-top: 7.9em;
+
+
+              span:nth-child(1){
+                font-size:1.3em;
+              }
+              span{
+                font-size:1em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main{
+    .mainArea{
+      .contentArea {
+        //Job section
+        .timelineText{
+          font-size: 0.9em;
+          div{
+            h1{
+              margin-top:20%;
+            }
+
+            .arrowDown{
+              margin-left:40%;
+            }
+          }
+        }
+        .timeline{
+          .timelineArea{
+            .firstStop {
+              .spriteFirst {
+                margin-left:21%;
+              }
+            }
+            .secondStop {
+              .spriteSecond {
+                margin-left:21%;
+              }
+            }
+            .thirdStop {
+              .spriteThird {
+                margin-left:21%;
+              }
+            }
+            .fourthStop {
+              .spriteFourth {
+                margin-left:21%;
+              }
+            }
+          }
+        }
+
+        // Styling for the paragraphs in the Journey Page
+        h1{
+          color:white;
+          margin-left: 1.4em;
+        }
+        #journeyArea{
+          p{
+            color:white;
+            margin:1.4em 3em 0 2em;
+            font-size:1.3em;
+          }
+
+          p:nth-child(1){
+            margin-right:13em;
+          }
+        }
+
+        //For skills page
+        .charPic{
+          div{
+            img{
+              margin-top:25%;
+            }
+          }
+        }
+        .charEquippedSkills{
+          @include span-columns(6.7);
+          div{
+            ul{
+              font-size:1em;
+            }
+          }
+        }
+
+        .charStats{
+          div{
+            p{
+              font-size:1.2em;
+              margin:3% 0 3% 0;
+              line-height:2em;
+            }
+          }
+        }
+
+        .charMisc{
+          @include span-columns(6.7);
+          div{
+            ul{
+              font-size:1em;
+            }
+          }
+        }
+
+        .charEquip{
+          @include span-columns(6.7);
+          div{
+            ul{
+              font-size:1em;
+            }
+            img{
+              height:1.6em;
+              width: 1.6em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  //Menu Area Design
+  main{
+    .menuArea{
+      @include span-columns(3.4)
+      height:17.5em;
+      right:1%;
+
+      ul{
+        font-size:1.23em;
+      }
+    }
+    .profileInfo{
+      right:1%;
+
+      .creator{
+        section{
+          @include span-columns(7);
+          h2{
+            font-size:1.3em;
+          }
+          h3{
+            font-size:1.1em;
+          }
+        }
+        img{
+          height:8.5em;
+          width:11.5em;
+          position:relative;
+          left:0.5em;
+          bottom:12em;
+        }
+        //Using the media query to resize photo until new scale of 1150
+      }
+    }
+    @media (max-width:1200px){
+      .profileInfo{
+        @include span-columns(5.5);
+        .creator{
+          img{
+            height:8.5em;
+            width:11.5em;
+            left:0em;
+          }
+        }
+      }
+    }
+  }
+}

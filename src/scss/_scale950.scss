@@ -1,0 +1,578 @@
+@media only screen and (max-width:950px){
+
+  //Mixins Area
+  @mixin charStyle{
+    .charStatsOne{
+      @include span-columns(12);
+      padding:0 0 0 0.7em;
+      margin:0;
+
+      h2{
+        font-size:1em;
+        @include shift(0.2);
+      }
+      span:nth-child(2){
+        font-size:1.1em;
+      }
+      span{
+        font-size:1em;
+      }
+    }
+    .charStatsTwo{
+      @include span-columns(12);
+      padding:0.7em 0 0 0.7em;
+      margin:0;
+
+      span:nth-child(1){
+        font-size:1.1em;
+      }
+      span{
+        font-size:1em;
+      }
+    }
+
+  }
+
+  //Styling for home page
+  main{
+    height:140em;
+    background-image: url('http://i.ytimg.com/vi/qDxpIvovlOs/maxresdefault.jpg');
+    z-index:-1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .mainSection {
+      .mainArea{
+        margin-top:87%;
+        @include span-columns(8);
+        @include shift(2);
+
+        .contentArea{
+          .charOne{
+            @include charStyle;
+            @include shift(3.8);
+
+            .spriteImageOne {
+              margin: 2em 0 0 8%;
+            }
+          }
+
+          .charTwo{
+            @include shift(3.8);
+            @include charStyle;
+
+            .spriteImageTwo{
+              margin: 2em 0 0 8%;
+            }
+            .charStatsOne{
+
+              h2{
+                font-size:1em;
+                @include shift(0.2);
+              }
+            }
+          }
+
+
+          .charThree{
+            @include shift(3.8);
+            @include charStyle;
+
+            .spriteImageThree{
+              margin: 2em 0 0 8%;
+            }
+          }
+        }
+      }
+      //using this to get to a smaller resolution file
+      @media (max-width:890px){
+        .mainArea{
+          margin-top: 93%;
+        }
+        @media (max-width:840px){
+          .mainArea{
+            margin-top: 98%;
+          }
+        }
+        @media (max-width:800px){
+          .mainArea{
+            margin-top: 105%;
+          }
+        }
+      }
+    }
+  }
+
+  main{
+    .mainArea{
+      height:90em;
+      margin-top:45%;
+      @include shift(1.5);
+
+      .contentArea {
+        //Job section
+        .timelineText{
+          font-size: 1em;
+          @include span-columns(10.4);
+          height:37em;
+          margin-top:1em;
+
+          div{
+            h1{
+              margin-top:35%;
+            }
+
+            .arrowDown{
+              margin-left:37%;
+            }
+          }
+        }
+        .timeline{
+          height:40em;
+          @include shift(1.7);
+
+          .timelineArea{
+
+            .mainLine{
+              width:0.6em;
+              height:36em;
+              top:1em;
+              left:14em;
+            }
+            .firstStop {
+              @include span-columns(10);
+              .spriteFirst {
+                margin:7% 0 0 19%;
+              }
+              .ticklineOne{
+                margin:0;
+                width:2em;
+                height:0.3em;
+                position:relative;
+                top:5.3em;
+                left:1.8em;
+              }
+              p{
+                width:5em;
+                position:relative;
+                top:2em;
+                left:2em;
+              }
+            }
+            .secondStop {
+              @include span-columns(10);
+              .spriteSecond {
+                margin:7% 0 0 19%;
+              }
+              .ticklineTwo{
+                margin:0;
+                width:2em;
+                height:0.3em;
+                position:relative;
+                top:5.3em;
+                left:1.8em;
+              }
+              p{
+                width:5em;
+                position:relative;
+                top:2em;
+                left:2em;
+              }
+            }
+            .thirdStop{
+              @include span-columns(10);
+              .spriteThird {
+                margin:7% 0 0 19%;
+              }
+              .ticklineThree{
+                margin:0;
+                width:2em;
+                height:0.3em;
+                position:relative;
+                top:5.3em;
+                left:1.8em;
+              }
+              p{
+                width:5em;
+                position:relative;
+                top:2em;
+                left:2em;
+              }
+            }
+            .fourthStop {
+              @include span-columns(10);
+              .spriteFourth {
+                margin:7% 0 0 19%;
+              }
+              .ticklineFourth{
+                margin:0;
+                width:2em;
+                height:0.3em;
+                position:relative;
+                top:5.3em;
+                left:1.8em;
+              }
+              p{
+                width:5em;
+                position:relative;
+                top:2.7em;
+                left:2em;
+              }
+            }
+            @media (max-width:860px){
+              .mainLine{
+                width:0.6em;
+                height:36em;
+                top:1em;
+                left:12.5em;
+              }
+              .firstStop {
+                @include span-columns(10);
+                .spriteFirst {
+                  margin:7% 0 0 15%;
+                }
+                .ticklineOne{
+                  left:1.8em;
+                }
+                p{
+                  left:1.5em;
+                }
+              }
+              .secondStop {
+                @include span-columns(10);
+                .spriteSecond {
+                  margin:7% 0 0 15%;
+                }
+                .ticklineTwo{
+                  left:1.8em;
+                }
+                p{
+                  left:1.4em;
+                }
+              }
+              .thirdStop{
+                @include span-columns(10);
+                .spriteThird {
+                  margin:7% 0 0 15%;
+                }
+                .ticklineThree{
+                  left:1.8em;
+                }
+                p{
+                  left:1.3em;
+                }
+              }
+              .fourthStop {
+                @include span-columns(10);
+                .spriteFourth {
+                  margin:7% 0 0 15%;
+                }
+                .ticklineFourth{
+                  left:1.8em;
+                }
+                p{
+                  left:1.2em;
+                }
+              }
+            }
+          }
+        }
+
+        // Styling for the paragraphs in the Journey Page
+        h1{
+          color:white;
+          margin-left: 0.7em;
+        }
+        #journeyArea{
+
+          p{
+            color:white;
+            font-size:1.4em;
+            margin:1.4em 1em 0 1em;
+          }
+
+          p:nth-child(1){
+            margin-right:1em;
+          }
+        }
+
+        //For skills page
+        .charPic{
+          @include span-columns(4.3);
+          div{
+            img{
+              margin-top:30%;
+            }
+            @media (max-width:850px){
+              img{
+                margin-top:38%;
+              }
+            }
+          }
+        }
+        .charEquippedSkills{
+          @include span-columns(6.7);
+          height:28em;
+          margin-left:0;
+          h2{
+            text-align:center;
+          }
+          div{
+            ul{
+              @include span-columns(12);
+              font-size:1.4em;
+              margin:0;
+              padding:0;
+              li{
+                padding:0;
+                span{
+                  bottom:0.2em;
+                  left:0.3em;
+                }
+                img{
+                }
+              }
+            }
+          }
+        }
+
+        .charStats{
+          @include span-columns(4.3);
+          margin-right:0;
+          position:relative;;
+          height:28em;
+          bottom:12em;
+          div{
+            p{
+              font-size:1.05em;
+              margin:3% 0 3% 0;
+              line-height:2em;
+            }
+          }
+        }
+
+        .charMisc{
+          @include span-columns(6.7);
+          height:23em;
+          h2{
+            text-align:center;
+          }
+          div{
+            ul{
+              @include span-columns(12);
+              font-size:1.3em;
+              margin:0;
+              padding:0;
+
+              li{
+                padding-bottom:0em;
+
+                span{
+                  bottom:0.2em;
+                  left:0.3em;
+                }
+                img{
+                }
+              }
+            }
+
+          }
+        }
+
+        .charEquip{
+          @include span-columns(6.7);
+          height:21em;
+
+          h2{
+            text-align:center;
+          }
+          div{
+            ul{
+              @include span-columns(12);
+              font-size:1.3em;
+              margin:0;
+              padding:0;
+
+              li{
+                margin:0;
+                padding-left:2%;
+              }
+              img{
+                height:1.6em;
+                width: 1.6em;
+              }
+            }
+          }
+        }
+        //Styling for Projects/Quests Completed Section
+        .firstProject{
+          @include span-columns(3.5);
+          height:12em;
+
+          h2{
+            font-size:1.2em;
+          }
+          h3{
+            font-size:0.9em;
+          }
+        }
+
+        .secondProject{
+          @include span-columns(3.5);
+          height:12em;
+          margin-right:2.3%;
+
+          h2{
+            font-size:1.2em;
+          }
+          h3{
+            font-size:0.9em;
+          }
+        }
+
+        .thirdProject{
+          @include span-columns(3.5);
+          height:12em;
+          margin-top:2%;
+
+          h2{
+            font-size:1.2em;
+          }
+          h3{
+            font-size:0.9em;;
+          }
+        }
+
+        .fourthProject{
+          @include span-columns(3.5);
+          height:12em;
+          margin-top:27%;
+
+          h2{
+            font-size:1.2em;
+          }
+          h3{
+            font-size:0.9em;
+          }
+        }
+        .fifthProject{
+          @include span-columns(3.5);
+          margin-top: 27%;
+          height:12em;
+          h2{
+            font-size:1.2em;
+          }
+          h3{
+            font-size:0.9em;
+          }
+        }
+      }
+    }
+
+    //Resizing main Area for scale 950
+    .skillArea{
+      @include span-columns(9);
+      @include shift(1.55);
+    }
+    //Syling for the contentArea as everything smaller until the next scale file
+    @media (max-width:900px){
+      .mainArea{
+        margin-top:49%;
+      }
+    }
+    @media (max-width:830px){
+      .mainArea{
+        margin-top:54%;
+      }
+    }
+  }
+  //Menu Area Design
+  main{
+    .menuArea{
+      @include span-columns(6)
+      height:21em;
+      right:24%;
+      top:26em;
+
+      ul{
+        font-size:1.45em;
+      }
+    }
+    .profileInfo{
+      @include span-columns(6);
+      right:2%;
+      height:23em;
+      top:2em;
+      right:24%;
+
+      .creator{
+        section{
+          @include span-columns(12);
+          h2{
+            font-size:1.3em;
+            text-align:center;
+          }
+          h3{
+            font-size:1.3em;
+            text-align:center;
+          }
+          h3:nth-child(5){
+            padding-top:0
+          }
+        }
+        img{
+          margin:4%;
+          @include shift(3.5);
+          height:7.5em;
+          width:11.5em;
+        }
+        //Adjust picture until next scale file
+        @media (max-width:840px){
+          img{
+            @include shift(3.25);
+          }
+        }
+      }
+    }
+  }
+
+  main{
+    .nonHomeMenu{
+      @include span-columns(6)
+      height:21em;
+      right:24%;
+      top:2em;
+
+      ul{
+        font-size:1.45em;
+      }
+    }
+  }
+
+  //This was done later to have individual main contentArea
+  .projectMain{
+    height:80em;
+    .projectArea{
+
+      height:50em;
+    }
+  }
+  .skillMain{
+    height:107em;
+    .skillArea{
+      height:78em;
+    }
+  }
+  .journeyArea{
+    height:120em;
+    .journeySection{
+      height:82em;
+    }
+  }
+  .jobMain{
+    height:120em;
+    .jobArea{
+    height:85em;
+    }
+  }
+
+}
