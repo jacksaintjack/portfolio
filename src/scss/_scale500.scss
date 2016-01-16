@@ -490,7 +490,7 @@
         .thirdProject{
           @include span-columns(5);
           @include shift(0.8);
-          margin-top: 42%;
+          margin-top: 45%;
           height:10em;
 
           h2{
@@ -504,7 +504,7 @@
         .fourthProject{
           @include span-columns(5);
           height:10em;
-          margin-top: 42%;
+          margin-top: 45%;
 
           h2{
             font-size:1.2em;
@@ -516,7 +516,7 @@
         .fifthProject{
           @include span-columns(5);
           @include shift(0.8);
-          margin-top: 42%;
+          margin-top: 45%;
           height:10em;
           h2{
             font-size:1.2em;
@@ -688,9 +688,9 @@
   }
   //This was done later to have individual main contentArea
   .projectMain{
-    height:90em;
+    height:95em;
     .projectArea{
-      height:62em;
+      height:66em;
     }
   }
   .skillMain{

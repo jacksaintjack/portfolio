@@ -535,7 +535,7 @@
         .thirdProject{
           @include span-columns(5);
           @include shift(0.8);
-          margin-top: 47%;
+          margin-top: 70%;
           height:9em;
 
           h2{
@@ -549,7 +549,7 @@
         .fourthProject{
           @include span-columns(5);
           height:9em;
-          margin-top: 47%;
+          margin-top: 70%;
 
           h2{
             font-size:1.1em;
@@ -561,7 +561,7 @@
         .fifthProject{
           @include span-columns(5);
           @include shift(0.8);
-          margin-top: 47%;
+          margin-top: 65%;
           height:9em;
           h2{
             font-size:1.1em;

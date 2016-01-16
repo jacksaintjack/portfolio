@@ -148,9 +148,16 @@
   }
   h2{
     text-align: center;
-    margin-bottom: 2%;
+    margin:2% 0 2% 0;
   }
+
+  a{
+    text-decoration:none;
+  }
+
   h3{
+    color:white;
+    text-decoration: none;
     text-align:center;
     margin:1% 0 2% 0;
   }
@@ -285,7 +292,7 @@ main {
 
       p{
         color:white;
-        font-size:1.5em;
+        font-size:1.55em;
         margin:1em 3em 0 2em;
       }
 
@@ -375,6 +382,7 @@ main {
             //To quick find mixin search with ** in front of A2 and ** behind with no spaces
             @include spritePropertiesTwo;
             @include shift(3.2);
+            cursor: pointer; cursor: hand;
           }
         }
         .ticklineOne{
@@ -399,6 +407,7 @@ main {
           //To quick find mixin search with ** in front of A2 and ** behind with no spaces
           @include spritePropertiesTwo;
           @include shift(3.2);
+          cursor: pointer; cursor: hand;
         }
         .ticklineTwo{
           //To quick find mixin search with ** in front of A4 and ** behind with no spaces
@@ -422,6 +431,7 @@ main {
           //To quick find mixin search with ** in front of A2 and ** behind with no spaces
           @include spritePropertiesTwo;
           @include shift(3.15);
+          cursor: pointer; cursor: hand;
         }
         .ticklineThree{
           //To quick find mixin search with ** in front of A4 and ** behind with no spaces
@@ -445,6 +455,7 @@ main {
           //To quick find mixin search with ** in front of A2 and ** behind with no spaces
           @include spritePropertiesTwo;
           @include shift(3.15);
+          cursor: pointer; cursor: hand;
         }
         .ticklineFourth{
           //To quick find mixin search with ** in front of A4 and ** behind with no spaces
@@ -580,10 +591,17 @@ main {
     section{
       width:100%;
       height:100%;
+      transition:background 0.9s;
+
       div{
         background-image:url('../../assets/pictures/calculator.png');
         background-size: 100% 100%;
         background-repeat:no-repeat;
+        transition:background 0.9s;
+
+        &:hover{
+          background-image:url('../../assets/pictures/code.png');
+        }
       }
     }
   }
@@ -598,6 +616,11 @@ main {
         background-image:url('../../assets/pictures/bid.png');
         background-size: 100% 100%;
         background-repeat:no-repeat;
+        transition:background 0.9s;
+
+        &:hover{
+          background-image:url('../../assets/pictures/code.png');
+        }
       }
     }
   }
@@ -611,6 +634,11 @@ main {
         background-image:url('../../assets/pictures/github.png');
         background-size: 100% 100%;
         background-repeat:no-repeat;
+        transition:background 0.9s;
+
+        &:hover{
+          background-image:url('../../assets/pictures/code.png');
+        }
       }
     }
   }
@@ -618,7 +646,7 @@ main {
 
   .fourthProject {
     @include projectsStyle;
-    margin-top:10%;
+    margin-top:13%;
 
     section {
       width:100%;
@@ -627,12 +655,17 @@ main {
         background-image:url('../../assets/pictures/skateboard.png');
         background-size: 100% 100%;
         background-repeat:no-repeat;
+        transition:background 0.9s;
+
+        &:hover{
+          background-image:url('../../assets/pictures/code.png');
+        }
       }
     }
   }
   .fifthProject{
     @include projectsStyle;
-    margin-top:10%;
+    margin-top:13%;
 
     section{
       width:100%;
@@ -641,6 +674,11 @@ main {
         background-image:url('../../assets/pictures/thisSite.png');
         background-size: 100% 100%;
         background-repeat:no-repeat;
+        transition:background 0.9s;
+
+        &:hover{
+          background-image:url('../../assets/pictures/code.png');
+        }
       }
     }
   }
@@ -753,6 +791,9 @@ main {
 }
 
 //This was done later to have individual main contentArea
-.projectArea{
-  height:62em;
+.projectMain{
+  height:80em;
+  .projectArea{
+    height:69em;
+  }
 }

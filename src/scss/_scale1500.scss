@@ -111,10 +111,10 @@
 
           .fourthProject{
             height:16em;
-            margin-top:16%;
+            margin-top:18%;
           }
           .fifthProject{
-            margin-top:16%;
+            margin-top:18%;
             height:16em;
           }
 
@@ -129,7 +129,7 @@
           }
         }
         .charEquippedSkills{
-
+          @include span-columns(7.3);
           div{
             ul{
               font-size:1.2em;
@@ -138,7 +138,6 @@
         }
 
         .charStats{
-
           div{
             p{
               font-size:1.25em;
@@ -148,7 +147,7 @@
         }
 
         .charMisc{
-
+          @include span-columns(7.3);
           div{
             ul{
               font-size:1.2em;
@@ -157,7 +156,8 @@
         }
 
         .charEquip{
-
+          @include span-columns(7.3);
+          
           div{
             ul{
               font-size:1.2em;
