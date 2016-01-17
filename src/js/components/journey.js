@@ -20,24 +20,25 @@ class Journey extends React.Component {
     //This section is used for the text to display one letter at a time like a typewriter
     let str =
             `<p>
-                Nicholas Glover a lover of video games, computers, maps, and now Front-End Engineering.
-                Is now continuing his journey into the realm of the unknown. Never accepting what has been told to him to be the absolute truth in the pursuit of knowledge!
-                You may ask, “Why is this?” When Mr. Glover was younger he was diagnosed with having Severe Dyslexia.
-                It was said that it could have caused him not to be able to get the education that everyone was getting,
-                but that statement would be far from the truth. Through hard work, and great teachers Mr. Glover was able to obtain the education he needed.
+               Nicholas Glover, a lover of video games, computers, maps, and now Front-End Engineering,
+               is now continuing his journey into the realm of the unknown. Never accepting what has been told to him to be the absolute truth in the pursuit of knowledge!
+               You may ask, “Why is this?” When Mr. Glover was younger he was diagnosed with severe dyslexia.
+               It was said dyslexia could have caused him not to be able to get the education everyone was getting,
+               but that statement would be far from the truth. Through hard work, perseverance,
+               and great teachers Mr. Glover was able to obtain the education he needed.
             </p>
 
             <p>
-              When he was a teenager he was able to learn how to work on and build PCs through the help of an older gentlemen who owned a computer store.
-              In college he learned the importance of programming while obtaining his degree to become a GIS professional.
-              He would continue to learn it’s great benifits as he work for the City of Cookeville, and Over the next few years would learn more about it’s use.
-            <p>
+              When he was a teenager, he learned how to work on and build PCs through the help of Master Bob who owned a computer store.
+              Mr. Glover learned the importance of programming while obtaining his degree to become a GIS professional.
+              He would continue to learn programming’s great benefits as he worked for the City of Cookeville,
+              and over the next few years would learn more about its uses.
+            </p>
 
             <p>
               As seasons change so do people. A time of great change had befallen upon Mr. Glover.
-              One that would change many aspects of his life.
-              It was during this time that he decided it was time to learn how to program and set him on this great journey that he is taking now!
-              What adventures await him now? You may be the one to guide him to the next level!
+              One which would change many aspects of his life. It was during this time he decided to learn how to program and this decision set him on this great journey he is now taking!
+              What adventures await him? You may be the one to guide him to the next level!
             </p>
 
             <p>
