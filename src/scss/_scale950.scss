@@ -490,7 +490,7 @@
     .menuArea{
       @include span-columns(6)
       height:21em;
-      right:24%;
+      right:24.5%;
       top:26em;
 
       ul{
@@ -502,7 +502,7 @@
       right:2%;
       height:23em;
       top:2em;
-      right:24%;
+      right:24.5%;
 
       .creator{
         section{
@@ -539,7 +539,7 @@
     .nonHomeMenu{
       @include span-columns(6)
       height:21em;
-      right:24%;
+      right:24.5%;
       top:2em;
 
       ul{
