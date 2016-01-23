@@ -465,6 +465,17 @@
             font-size:0.9em;
           }
         }
+        .sixthProject{
+          @include span-columns(3.5);
+          margin-top: 27%;
+          height:12em;
+          h2{
+            font-size:1.2em;
+          }
+          h3{
+            font-size:0.9em;
+          }
+        }
       }
     }
 
@@ -552,7 +563,8 @@
   .projectMain{
     height:80em;
     .projectArea{
-
+      @include span-columns(10);
+      @include shift(1);
       height:50em;
     }
   }

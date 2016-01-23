@@ -25,70 +25,83 @@ class Projects extends React.Component {
         <section className='mainArea projectArea'>
           <div className ="contentArea">
 
-              <section className='firstProject'>
-                <a target="_blank" href="http://jacksaintjack.github.io/homework_week3_friday/">
-                  <section>
-                    <div></div>
-                  </section>
-                </a>
-                <a target="_blank" href="https://github.com/jacksaintjack/homework_week3_friday">
-                  <h3>Github Repo Link</h3>
-                </a>
-                <h2>Calculator</h2>
-                <h3>CSS/HTML, Bourbon, Neat, JavaScript, Responsive Design</h3>
-              </section>
+            <section className='firstProject'>
+              <a target="_blank" href="http://jacksaintjack.github.io/homework_week3_friday/">
+                <section>
+                  <div></div>
+                </section>
+              </a>
+              <h2>Calculator</h2>
+              <h3>CSS/HTML, Bourbon, Neat, JavaScript, Responsive Design</h3>
+              <a target="_blank" href="https://github.com/jacksaintjack/homework_week3_friday">
+                <h3>Github Repo Link</h3>
+              </a>
+            </section>
 
-              <section className='secondProject'>
-                <a target="_blank" href="http://jacksaintjack.github.io/silentAuction">
-                  <section>
-                    <div></div>
-                  </section>
-                </a>
-                <a target="_blank" href="https://github.com/jacksaintjack/silentAuction">
-                  <h3>Github Repo Link</h3>
-                </a>
-                <h2>Silent Auction</h2>
-                <h3>AJAX, jQuery, Javascript, React.js, React-Router, HTML/CSS, Bourbon, Neat, Responsive Design</h3>
-              </section>
+            <section className='secondProject'>
+              <a target="_blank" href="http://jacksaintjack.github.io/silentAuction">
+                <section>
+                  <div></div>
+                </section>
+              </a>
+              <h2>Silent Auction</h2>
+              <h3>AJAX, jQuery, Javascript, React.js, React-Router, HTML/CSS, Bourbon, Neat, Responsive Design</h3>
+              <a target="_blank" href="https://github.com/jacksaintjack/silentAuction">
+                <h3>Github Repo Link</h3>
+              </a>
+            </section>
 
-              <section className='thirdProject'>
-                <a target="_blank" href="http://jacksaintjack.github.io/homework_week4_tuesday/">
-                  <section>
-                    <div></div>
-                  </section>
-                </a>
-                <a target="_blank" href="https://github.com/jacksaintjack/homework_week4_tuesday">
-                  <h3>Github Repo Link</h3>
-                </a>
-                <h2>Remake of Github Repo</h2>
-                <h3>HTML5/CSS, JavaScript, jQuery, AJAX, Templates, Bourbon, Neat</h3>
-              </section>
+            <section className='thirdProject'>
+              <a target="_blank" href="http://jacksaintjack.github.io/homework_week4_tuesday/">
+                <section>
+                  <div></div>
+                </section>
+              </a>
+              <h2>Remake of Github Repo</h2>
+              <h3>HTML5/CSS, JavaScript, jQuery, AJAX, Templates, Bourbon, Neat</h3>
+              <a target="_blank" href="https://github.com/jacksaintjack/homework_week4_tuesday">
+                <h3>Github Repo Link</h3>
+              </a>
+            </section>
 
-              <section className='fourthProject'>
-                <a target="_blank" href="http://jacksaintjack.github.io/homework_week2_thursday/">
-                  <section>
-                    <div></div>
-                  </section>
-                </a>
-                <a target="_blank" href="https://github.com/jacksaintjack/homework_week2_thursday">
-                  <h3>Github Repo Link</h3>
-                </a>
-                <h2>SK8 Website</h2>
-                <h3>HTML5/CSS, Bourbon, Neat, Responsive Design</h3>
-              </section>
+            <section className='fourthProject'>
+              <a target="_blank" href="http://jacksaintjack.github.io/homework_week2_thursday/">
+                <section>
+                  <div></div>
+                </section>
+              </a>
+              <h2>SK8 Website</h2>
+              <h3>HTML5/CSS, Bourbon, Neat, Responsive Design</h3>
+              <a target="_blank" href="https://github.com/jacksaintjack/homework_week2_thursday">
+                <h3>Github Repo Link</h3>
+              </a>
+            </section>
 
-              <section className='fifthProject'>
-                <a target="_blank" href="http://jacksaintjack.github.io/">
-                  <section>
-                    <div></div>
-                  </section>
-                </a>
-                <a target="_blank" href="https://github.com/jacksaintjack/portfolio">
-                  <h3>Github Repo Link</h3>
-                </a>
-                <h2>This Site</h2>
-                <h3>React.js, React-Router, JavaScript, HTML/CSS, Bourbon, Neat, Responsive Design</h3>
-              </section>
+            <section className='fifthProject'>
+              <a target="_blank" href="http://jacksaintjack.github.io/">
+                <section>
+                  <div></div>
+                </section>
+              </a>
+              <h2>This Site</h2>
+              <h3>React.js, React-Router, JavaScript, HTML/CSS, Bourbon, Neat, Responsive Design</h3>
+              <a target="_blank" href="https://github.com/jacksaintjack/portfolio">
+                <h3>Github Repo Link</h3>
+              </a>
+            </section>
+
+            <section className='sixthProject'>
+              <a target="_blank" href="http://jacksaintjack.github.io/8BallPool/">
+                <section>
+                  <div></div>
+                </section>
+              </a>
+              <h2>8 Ball Pool</h2>
+              <h3>Phaser, JavaScript, HTML/CSS</h3>
+              <a target="_blank" href="https://github.com/jacksaintjack/8BallPool">
+                <h3>Github Repo Link</h3>
+              </a>
+            </section>
 
           </div>
         </section>

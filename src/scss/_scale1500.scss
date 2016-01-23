@@ -117,7 +117,10 @@
             margin-top:18%;
             height:16em;
           }
-
+          .sixthProject{
+            margin-top:18%;
+            height:16em;
+          }
 
         //For skills page
 
@@ -157,7 +160,7 @@
 
         .charEquip{
           @include span-columns(7.3);
-          
+
           div{
             ul{
               font-size:1.2em;

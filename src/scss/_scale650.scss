@@ -401,68 +401,43 @@
         }
         //Styling for Projects/Quests Completed Section
         .firstProject{
-          @include span-columns(5);
-          @include shift(0.8);
-          height:12em;
-
-          h2{
-            font-size:1.2em;
-          }
-          h3{
-            font-size:0.9em;
-          }
+          @include span-columns(11);
+          @include shift(0.5);
+          margin-top: 3%;
+          height:18em;
         }
 
         .secondProject{
-          @include span-columns(5);
-          height:12em;
-          margin-right:2.3%;
-
-          h2{
-            font-size:1.2em;
-          }
-          h3{
-            font-size:0.9em;
-          }
+          @include span-columns(11);
+          @include shift(0.5);
+          margin-top: 33%;
+          height:18em;
         }
 
         .thirdProject{
-          @include span-columns(5);
-          @include shift(0.8);
-          margin-top: 29%;
-          height:12em;
-
-          h2{
-            font-size:1.2em;
-          }
-          h3{
-            font-size:0.9em;;
-          }
+          @include span-columns(11);
+          @include shift(0.5);
+          margin-top: 33%;
+          height:18em;
         }
 
         .fourthProject{
-          @include span-columns(5);
-          height:12em;
-          margin-top:29%;
-
-          h2{
-            font-size:1.2em;
-          }
-          h3{
-            font-size:0.9em;
-          }
+          @include span-columns(11);
+          @include shift(0.5);
+          margin-top: 33%;
+          height:18em;
         }
         .fifthProject{
-          @include span-columns(5);
-          @include shift(0.8);
+          @include span-columns(11);
+          @include shift(0.5);
           margin-top: 33%;
-          height:12em;
-          h2{
-            font-size:1.2em;
-          }
-          h3{
-            font-size:0.9em;
-          }
+          height:18em;
+        }
+        .sixthProject{
+          @include span-columns(11);
+          @include shift(0.5);
+          margin-top: 33%;
+          height:18em;
         }
       }
     }
@@ -592,9 +567,9 @@
   }
   //This was done later to have individual main contentArea
   .projectMain{
-    height:95em;
+    height:215em;
     .projectArea{
-      height:68em;
+      height:175em;
     }
   }
   .skillMain{

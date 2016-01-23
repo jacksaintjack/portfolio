@@ -238,7 +238,7 @@
         }
         //Styling for Projects/Quests Completed Section
         .firstProject{
-          @include span-columns(3.6);
+          @include span-columns(3.8);
           height:14em;
 
           h2{
@@ -250,7 +250,7 @@
         }
 
         .secondProject{
-          @include span-columns(3.6);
+          @include span-columns(3.8);
           height:14em;
           margin-right:30%;
 
@@ -263,7 +263,7 @@
         }
 
         .thirdProject{
-          @include span-columns(3.6);
+          @include span-columns(3.8);
           height:14em;
           margin-top:28%;
 
@@ -277,7 +277,7 @@
         }
 
         .fourthProject{
-          @include span-columns(3.6);
+          @include span-columns(3.8);
           height:14em;
           margin-top:28%;
 
@@ -289,7 +289,18 @@
           }
         }
         .fifthProject{
-          @include span-columns(3.6);
+          @include span-columns(3.8);
+          margin-top:28%;
+          height:14em;
+          h2{
+            font-size:1.3em;
+          }
+          h3{
+            font-size:1.1em;
+          }
+        }
+        .sixthProject{
+          @include span-columns(3.8);
           margin-top:28%;
           height:14em;
           h2{
@@ -350,10 +361,12 @@
     }
   }
   //This was done later to have individual main contentArea
+  .projectMain{
+    height:95em;
   .projectArea{
-    height:60em;
+    height:87em;
   }
-
+}
   .journeyArea{
     height:100em;
     .journeySection{
